@@ -1,0 +1,11 @@
+author = "Genetic and SpudcakeZ";
+onLoadName = "RoamingDM";
+gameType = DM;
+onLoadMission = "RoamingDM [Genetic and SpudcakeZ]";
+onLoadIntro = "RoamingDM by Genetic and SpudcakeZ";
+respawnButton = 1;
+respawnDelay = 10;
+disabledAI = 1;
+aiKills = 0;
+loadScreen = "Images\Load.paa"
+disabledChannels[]={{0,true,true},{1,false,true},{6,true,true}};
