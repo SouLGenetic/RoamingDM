@@ -120,7 +120,7 @@ uisleep 0.123;
 
 } forEach _houses;
 
-sleep 600;
+sleep 360;
 
 execVM "Itemspawns.sqf";
 
