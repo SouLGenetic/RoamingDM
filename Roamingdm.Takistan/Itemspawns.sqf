@@ -8,7 +8,7 @@ private ["_gunList", "_magList","_i", "_c", "_rNum", "_houses"];
 
 _maxweps = floor(random 5);
 
-_lootrespawn = false;
+_lootrespawn = true;
 
 
 
@@ -49,7 +49,7 @@ _attChance = (random 100);
 
 _items = ["CUP_TKBasicAmmunitionBox_EP1"];
 
-_debug = true;
+_debug = false;
 
 _houses = nearestObjects [player,["House","Building"], 500];
 
@@ -120,9 +120,15 @@ uisleep 0.123;
 
 } forEach _houses;
 
+if (_lootrespawn) then {
+
 sleep 360;
 
 execVM "Itemspawns.sqf";
+} else {
+if !(_lootrespawn) exitwith{};
+};
+
 
 
 
