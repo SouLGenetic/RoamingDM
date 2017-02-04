@@ -93,7 +93,7 @@ _i = 0;
      };
      
      if (_attChance <= 95) then {
-     _loot addItemCargoGlobal [_ranItem,1];
+     _loot addItemCargoGlobal [_ranAtt,1];
      };
      
      if (_bagchance <= 20) then {
