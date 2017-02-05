@@ -1,8 +1,14 @@
 diag_log "--------------------------------------------------------------------";
-diag_log "-------------------Starting RoamingDM Server------------------------";
+diag_log "-------------------Starting RoamingDM Client------------------------";
 diag_log "----------------------------Version 1.1-----------------------------";
 diag_log "-----------------------Written By Genetic---------------------------";
 diag_log "--------------------------------------------------------------------";
-diag_log format["%1 Has Connected", bis_fnc_playerName];
+diag_log "----------------------Disabling Player Fatigue----------------------";
+[] spawn rDM_fnc_Itemspawns;
+player enableFatigue false;
+diag_log "----------------------Player Fatigue Disabled-----------------------";
 
-execVM "Itemspawns.sqf";
+
+diag_log "-------------------------Setup Clientside---------------------------";
+[] execVM "Core\init.sqf";
+diag_log "------------------------Client Setup Complete-----------------------";
