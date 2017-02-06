@@ -6,7 +6,7 @@
 
 private ["_gunList", "_magList","_i", "_c", "_rNum", "_houses"];
 
-_maxweps = floor(random 5);
+_maxweps = floor(random 5) + 1;
 
 _lootrespawn = true;
 
@@ -26,7 +26,7 @@ _magList = ["CUP_30Rnd_545x39_AK_M","CUP_30Rnd_545x39_AK_M", "CUP_30Rnd_762x39_A
 "CUP_5x_22_LR_17_HMR_M", "CUP_20Rnd_762x51_FNFAL_M", "CUP_20Rnd_762x51_FNFAL_M", "CUP_30Rnd_556x45_G36", "CUP_5Rnd_86x70_L115A1",
 "CUP_10x_303_M", "CUP_10x_303_M", "CUP_8Rnd_B_Beneli_74Slug", "CUP_10Rnd_127x99_M107", "CUP_20Rnd_762x51_B_M110", "CUP_20Rnd_762x51_DMR",
 "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_5Rnd_762x51_M24", "CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",
-"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_100Rnd_556x45_BetaCMag", 
+"CUP_200Rnd_TE4_Red_Tracer_556x45_M249", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_100Rnd_556x45_BetaCMag",
 "CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M", "CUP_20Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag",
 "CUP_20Rnd_762x51_B_SCAR", "CUP_20Rnd_762x51_B_SCAR", "CUP_30Rnd_9x19_MP5", "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M",
 "CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M", "CUP_30Rnd_Sa58_M_TracerG", "CUP_10Rnd_762x54_SVD_M", "CUP_10Rnd_9x39_SP5_VSS_M",
@@ -42,14 +42,14 @@ _attachment = ["CUP_optic_GOSHAWK", "CUP_optic_Kobra", "CUP_optic_NSPU", "CUP_op
 _bags = ["CUP_B_AlicePack_Khaki", "CUP_B_Bergen_BAF", "CUP_B_CivPack_WDL", "CUP_B_RPGPack_Khaki", "CUP_B_AssaultPack_ACU",
 "CUP_B_AssaultPack_Coyote", "CUP_B_USPack_Coyote"];
 
-_bagchance = (random 100);
-_gunChance = (random 100);
-_itemChance = (random 100);
-_attChance = (random 100);
+_bagchance = floor(random 100);
+_gunChance = floor(random 100);
+_itemChance = floor(random 100);
+_attChance = floor(random 100);
 
 _items = ["CUP_TKBasicAmmunitionBox_EP1"];
 
-_debug = false;
+_debug = true;
 
 _houses = nearestObjects [player,["House","Building"], 500];
 
@@ -79,23 +79,23 @@ _i = 0;
      clearMagazineCargoGlobal loot;
      clearItemCargoGlobal loot;
      loot addEventHandler ["ContainerOpened", {hintSilent "After you exit this crate it will delete!";}];
-     loot addEventHandler ["ContainerClosed",{execVM "Crate_delete.sqf";}];
+     loot addEventHandler ["ContainerClosed",{[] spawn rDM_fnc_cratedelete;}];
      _loot setPos (_x buildingPos _ranNum);
      _loot setPos (loot modelToWorld [0,0,1]);
-     
+
       if (_gunChance <= 70) then {
       _loot addWeaponCargoGlobal  [_selGun,1];
       _loot addMagazineCargoGlobal [_selMag,_maxweps];
      };
-     
+
      if (_itemChance <= 50) then {
      _loot addItemCargoGlobal [_ranItem,1];
      };
-     
+
      if (_attChance <= 95) then {
      _loot addItemCargoGlobal [_ranAtt,1];
      };
-     
+
      if (_bagchance <= 20) then {
       _loot addBackpackCargoGlobal [_ranBag,1];
      };
@@ -124,7 +124,7 @@ if (_lootrespawn) then {
 
 sleep 360;
 
-execVM "Itemspawns.sqf";
+[] spawn rDM_fnc_Itemspawns;
 } else {
 if !(_lootrespawn) exitwith{};
 };
