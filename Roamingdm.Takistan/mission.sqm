@@ -1,0 +1,2997 @@
+version=52;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=1;
+	class ItemIDProvider
+	{
+		nextID=56;
+	};
+	class Camera
+	{
+		pos[]={9094.082,523.07092,3911.415};
+		dir[]={0.90316331,-0.17364821,0.39260992};
+		up[]={0.15925208,0.98480767,0.069227725};
+		aside[]={0.39866653,-7.4505806e-009,-0.91709596};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+	"CUP_Creatures_Military_USArmy",
+	"CUP_Weapons_Makarov",
+	"CUP_Weapons_Ammunition",
+	"A3_Weapons_F",
+	"CUP_Creatures_Military_USMC",
+	"A3_Weapons_F_Items",
+	"CUP_Creatures_Military_CDF",
+	"CUP_Creatures_Military_BAF"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=7;
+		class Item0
+		{
+			className="CUP_Creatures_Military_USArmy";
+			name="CUP_Creatures_Military_USArmy";
+		};
+		class Item1
+		{
+			className="CUP_Weapons_Makarov";
+			name="CUP_Weapons_Makarov";
+		};
+		class Item2
+		{
+			className="CUP_Weapons_Ammunition";
+			name="CUP_Weapons_Ammunition";
+		};
+		class Item3
+		{
+			className="A3_Weapons_F";
+			name="Arma 3 Alpha - Weapons and Accessories";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item4
+		{
+			className="CUP_Creatures_Military_USMC";
+			name="CUP_Creatures_Military_USMC";
+		};
+		class Item5
+		{
+			className="CUP_Creatures_Military_CDF";
+			name="CUP_Creatures_Military_CDF";
+		};
+		class Item6
+		{
+			className="CUP_Creatures_Military_BAF";
+			name="CUP_Creatures_Military_BAF";
+		};
+	};
+};
+randomSeed=4632171;
+class ScenarioData
+{
+	author="Genetic";
+};
+class Mission
+{
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.40000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.40000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2009;
+		day=28;
+		hour=16;
+		minute=20;
+		startFogDecay=0.014;
+		forecastFogDecay=0.014;
+	};
+	class Entities
+	{
+		items=28;
+		class Item0
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5501.1855,141.75528,6335.9111};
+						angles[]={0,4.2478509,0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						name="USMC_Soldier";
+						description="USMC Soldier";
+						isPlayable=1;
+						class Inventory
+						{
+							class handgun
+							{
+								name="CUP_hgun_Makarov";
+								class primaryMuzzleMag
+								{
+									name="CUP_8Rnd_9x18_Makarov_M";
+									ammoLeft=8;
+								};
+							};
+							class uniform
+							{
+								typeName="CUP_U_B_USMC_MARPAT_WDL_TwoKneepads";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="CUP_8Rnd_9x18_Makarov_M";
+										count=1;
+										ammoLeft=8;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=3;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="CUP_V_B_MTV";
+								isBackpack=0;
+							};
+							class backpack
+							{
+								typeName="CUP_B_AssaultPack_Coyote";
+								isBackpack=1;
+							};
+							map="ItemMap";
+							headgear="CUP_H_USMC_HelmetWDL";
+						};
+					};
+					id=1;
+					type="CUP_B_US_Soldier";
+					atlOffset=0.023925781;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=0;
+			atlOffset=0.023925781;
+		};
+		class Item1
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1121.1016,449.3674,7009.3555};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						name="US_Soldier";
+						description="US Soldier";
+						isPlayable=1;
+						class Inventory
+						{
+							class handgun
+							{
+								name="CUP_hgun_Makarov";
+								class primaryMuzzleMag
+								{
+									name="CUP_8Rnd_9x18_Makarov_M";
+									ammoLeft=8;
+								};
+							};
+							class uniform
+							{
+								typeName="CUP_U_B_USArmy_TwoKnee";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="CUP_8Rnd_9x18_Makarov_M";
+										count=2;
+										ammoLeft=8;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=2;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="CUP_V_B_IOTV_tl";
+								isBackpack=0;
+							};
+							class backpack
+							{
+								typeName="CUP_B_AssaultPack_ACU";
+								isBackpack=1;
+							};
+							map="ItemMap";
+							headgear="CUP_H_USArmy_HelmetMICH_earpro";
+						};
+					};
+					id=3;
+					type="CUP_B_US_Soldier";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=2;
+		};
+		class Item2
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-207.0459,276.05649,2638.0347};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						name="Afgan_Soldier";
+						description="Afgan Soldier";
+						isPlayable=1;
+						class Inventory
+						{
+							class handgun
+							{
+								name="CUP_hgun_Makarov";
+								class primaryMuzzleMag
+								{
+									name="CUP_8Rnd_9x18_Makarov_M";
+									ammoLeft=8;
+								};
+							};
+							class uniform
+							{
+								typeName="CUP_U_B_CDF_DST_1";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="CUP_8Rnd_9x18_Makarov_M";
+										count=2;
+										ammoLeft=8;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=2;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="CUP_V_CDF_6B3_4_DST";
+								isBackpack=0;
+							};
+							class backpack
+							{
+								typeName="CUP_B_AssaultPack_Coyote";
+								isBackpack=1;
+							};
+							map="ItemMap";
+							headgear="CUP_H_CDF_H_PASGT_DST";
+						};
+					};
+					id=5;
+					type="CUP_B_US_Soldier";
+					atlOffset=0.028442383;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=4;
+			atlOffset=0.028442383;
+		};
+		class Item3
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4759.9658,258.22266,6735.3037};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						name="Sniper";
+						description="Sniper";
+						isPlayable=1;
+						class Inventory
+						{
+							class handgun
+							{
+								name="CUP_hgun_Makarov";
+								class primaryMuzzleMag
+								{
+									name="CUP_8Rnd_9x18_Makarov_M";
+									ammoLeft=8;
+								};
+							};
+							class uniform
+							{
+								typeName="CUP_U_B_BAF_DDPM_Ghillie";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="CUP_8Rnd_9x18_Makarov_M";
+										count=2;
+										ammoLeft=8;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=2;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="CUP_V_BAF_Osprey_Mk2_DDPM_Empty";
+								isBackpack=0;
+							};
+							class backpack
+							{
+								typeName="CUP_B_AssaultPack_Coyote";
+								isBackpack=1;
+							};
+							map="ItemMap";
+						};
+					};
+					id=7;
+					type="CUP_B_US_Soldier";
+					atlOffset=0.051239014;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=6;
+			atlOffset=0.051239014;
+		};
+		class Item4
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4195.0127,11.999602,12113.765};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						name="USMC_Soldier_1";
+						description="USMC Soldier";
+						isPlayable=1;
+						class Inventory
+						{
+							class handgun
+							{
+								name="CUP_hgun_Makarov";
+								class primaryMuzzleMag
+								{
+									name="CUP_8Rnd_9x18_Makarov_M";
+									ammoLeft=8;
+								};
+							};
+							class uniform
+							{
+								typeName="CUP_U_B_USMC_MARPAT_WDL_TwoKneepads";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="CUP_8Rnd_9x18_Makarov_M";
+										count=1;
+										ammoLeft=8;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=3;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="CUP_V_B_MTV";
+								isBackpack=0;
+							};
+							class backpack
+							{
+								typeName="CUP_B_AssaultPack_Coyote";
+								isBackpack=1;
+							};
+							map="ItemMap";
+							headgear="CUP_H_USMC_HelmetWDL";
+						};
+					};
+					id=9;
+					type="CUP_B_US_Soldier";
+					atlOffset=0.045166016;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=8;
+			atlOffset=0.045166016;
+		};
+		class Item5
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1896.8125,222.80861,5618.8164};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						name="US_Soldier_1";
+						description="US Soldier";
+						isPlayable=1;
+						class Inventory
+						{
+							class handgun
+							{
+								name="CUP_hgun_Makarov";
+								class primaryMuzzleMag
+								{
+									name="CUP_8Rnd_9x18_Makarov_M";
+									ammoLeft=8;
+								};
+							};
+							class uniform
+							{
+								typeName="CUP_U_B_USArmy_TwoKnee";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="CUP_8Rnd_9x18_Makarov_M";
+										count=2;
+										ammoLeft=8;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=2;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="CUP_V_B_IOTV_tl";
+								isBackpack=0;
+							};
+							class backpack
+							{
+								typeName="CUP_B_AssaultPack_ACU";
+								isBackpack=1;
+							};
+							map="ItemMap";
+							headgear="CUP_H_USArmy_HelmetMICH_earpro";
+						};
+					};
+					id=11;
+					type="CUP_B_US_Soldier";
+					atlOffset=0.10595703;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=10;
+			atlOffset=0.10595703;
+		};
+		class Item6
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8719.7578,273.37756,5177.3115};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						name="Afgan_Soldier_1";
+						description="Afgan Soldier";
+						isPlayable=1;
+						class Inventory
+						{
+							class handgun
+							{
+								name="CUP_hgun_Makarov";
+								class primaryMuzzleMag
+								{
+									name="CUP_8Rnd_9x18_Makarov_M";
+									ammoLeft=8;
+								};
+							};
+							class uniform
+							{
+								typeName="CUP_U_B_CDF_DST_1";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="CUP_8Rnd_9x18_Makarov_M";
+										count=2;
+										ammoLeft=8;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=2;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="CUP_V_CDF_6B3_4_DST";
+								isBackpack=0;
+							};
+							class backpack
+							{
+								typeName="CUP_B_AssaultPack_Coyote";
+								isBackpack=1;
+							};
+							map="ItemMap";
+							headgear="CUP_H_CDF_H_PASGT_DST";
+						};
+					};
+					id=13;
+					type="CUP_B_US_Soldier";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=12;
+		};
+		class Item7
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={9458.9072,336.41443,2357.0269};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						name="Sniper_1";
+						description="Sniper";
+						isPlayable=1;
+						class Inventory
+						{
+							class handgun
+							{
+								name="CUP_hgun_Makarov";
+								class primaryMuzzleMag
+								{
+									name="CUP_8Rnd_9x18_Makarov_M";
+									ammoLeft=8;
+								};
+							};
+							class uniform
+							{
+								typeName="CUP_U_B_BAF_DDPM_Ghillie";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="CUP_8Rnd_9x18_Makarov_M";
+										count=2;
+										ammoLeft=8;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=2;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="CUP_V_BAF_Osprey_Mk2_DDPM_Empty";
+								isBackpack=0;
+							};
+							class backpack
+							{
+								typeName="CUP_B_AssaultPack_Coyote";
+								isBackpack=1;
+							};
+							map="ItemMap";
+						};
+					};
+					id=15;
+					type="CUP_B_US_Soldier";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=14;
+		};
+		class Item8
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={6161.3389,347.06723,1719.1948};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						name="USMC_Soldier_2";
+						description="USMC Soldier";
+						isPlayable=1;
+						class Inventory
+						{
+							class handgun
+							{
+								name="CUP_hgun_Makarov";
+								class primaryMuzzleMag
+								{
+									name="CUP_8Rnd_9x18_Makarov_M";
+									ammoLeft=8;
+								};
+							};
+							class uniform
+							{
+								typeName="CUP_U_B_USMC_MARPAT_WDL_TwoKneepads";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="CUP_8Rnd_9x18_Makarov_M";
+										count=1;
+										ammoLeft=8;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=3;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="CUP_V_B_MTV";
+								isBackpack=0;
+							};
+							class backpack
+							{
+								typeName="CUP_B_AssaultPack_Coyote";
+								isBackpack=1;
+							};
+							map="ItemMap";
+							headgear="CUP_H_USMC_HelmetWDL";
+						};
+					};
+					id=17;
+					type="CUP_B_US_Soldier";
+					atlOffset=0.047576904;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=16;
+			atlOffset=0.047576904;
+		};
+		class Item9
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8029.583,403.28659,3805.2571};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						name="US_Soldier_2";
+						description="US Soldier";
+						isPlayable=1;
+						class Inventory
+						{
+							class handgun
+							{
+								name="CUP_hgun_Makarov";
+								class primaryMuzzleMag
+								{
+									name="CUP_8Rnd_9x18_Makarov_M";
+									ammoLeft=8;
+								};
+							};
+							class uniform
+							{
+								typeName="CUP_U_B_USArmy_TwoKnee";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="CUP_8Rnd_9x18_Makarov_M";
+										count=2;
+										ammoLeft=8;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=2;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="CUP_V_B_IOTV_tl";
+								isBackpack=0;
+							};
+							class backpack
+							{
+								typeName="CUP_B_AssaultPack_ACU";
+								isBackpack=1;
+							};
+							map="ItemMap";
+							headgear="CUP_H_USArmy_HelmetMICH_earpro";
+						};
+					};
+					id=19;
+					type="CUP_B_US_Soldier";
+					atlOffset=-3.0517578e-005;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=18;
+			atlOffset=-3.0517578e-005;
+		};
+		class Item10
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={9878.4453,233.86058,6471.377};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						name="Afgan_Soldier_2";
+						description="Afgan Soldier";
+						isPlayable=1;
+						class Inventory
+						{
+							class handgun
+							{
+								name="CUP_hgun_Makarov";
+								class primaryMuzzleMag
+								{
+									name="CUP_8Rnd_9x18_Makarov_M";
+									ammoLeft=8;
+								};
+							};
+							class uniform
+							{
+								typeName="CUP_U_B_CDF_DST_1";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="CUP_8Rnd_9x18_Makarov_M";
+										count=2;
+										ammoLeft=8;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=2;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="CUP_V_CDF_6B3_4_DST";
+								isBackpack=0;
+							};
+							class backpack
+							{
+								typeName="CUP_B_AssaultPack_Coyote";
+								isBackpack=1;
+							};
+							map="ItemMap";
+							headgear="CUP_H_CDF_H_PASGT_DST";
+						};
+					};
+					id=21;
+					type="CUP_B_US_Soldier";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=20;
+		};
+		class Item11
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1563.4707,373.49713,7903.7783};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						name="Sniper_2";
+						description="Sniper";
+						isPlayable=1;
+						class Inventory
+						{
+							class handgun
+							{
+								name="CUP_hgun_Makarov";
+								class primaryMuzzleMag
+								{
+									name="CUP_8Rnd_9x18_Makarov_M";
+									ammoLeft=8;
+								};
+							};
+							class uniform
+							{
+								typeName="CUP_U_B_BAF_DDPM_Ghillie";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="CUP_8Rnd_9x18_Makarov_M";
+										count=2;
+										ammoLeft=8;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=2;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="CUP_V_BAF_Osprey_Mk2_DDPM_Empty";
+								isBackpack=0;
+							};
+							class backpack
+							{
+								typeName="CUP_B_AssaultPack_Coyote";
+								isBackpack=1;
+							};
+							map="ItemMap";
+						};
+					};
+					id=23;
+					type="CUP_B_US_Soldier";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=22;
+		};
+		class Item12
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={10978.104,165.72823,10704.483};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						name="USMC_Soldier_3";
+						description="USMC Soldier";
+						isPlayable=1;
+						class Inventory
+						{
+							class handgun
+							{
+								name="CUP_hgun_Makarov";
+								class primaryMuzzleMag
+								{
+									name="CUP_8Rnd_9x18_Makarov_M";
+									ammoLeft=8;
+								};
+							};
+							class uniform
+							{
+								typeName="CUP_U_B_USMC_MARPAT_WDL_TwoKneepads";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="CUP_8Rnd_9x18_Makarov_M";
+										count=1;
+										ammoLeft=8;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=3;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="CUP_V_B_MTV";
+								isBackpack=0;
+							};
+							class backpack
+							{
+								typeName="CUP_B_AssaultPack_Coyote";
+								isBackpack=1;
+							};
+							map="ItemMap";
+							headgear="CUP_H_USMC_HelmetWDL";
+						};
+					};
+					id=25;
+					type="CUP_B_US_Soldier";
+					atlOffset=0.051818848;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=24;
+			atlOffset=0.051818848;
+		};
+		class Item13
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8451.4717,231.03442,10712.995};
+						angles[]={0,6.0757351,0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						name="US_Soldier_3";
+						description="US Soldier";
+						isPlayable=1;
+						class Inventory
+						{
+							class handgun
+							{
+								name="CUP_hgun_Makarov";
+								class primaryMuzzleMag
+								{
+									name="CUP_8Rnd_9x18_Makarov_M";
+									ammoLeft=8;
+								};
+							};
+							class uniform
+							{
+								typeName="CUP_U_B_USArmy_TwoKnee";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="CUP_8Rnd_9x18_Makarov_M";
+										count=2;
+										ammoLeft=8;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=2;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="CUP_V_B_IOTV_tl";
+								isBackpack=0;
+							};
+							class backpack
+							{
+								typeName="CUP_B_AssaultPack_ACU";
+								isBackpack=1;
+							};
+							map="ItemMap";
+							headgear="CUP_H_USArmy_HelmetMICH_earpro";
+						};
+					};
+					id=27;
+					type="CUP_B_US_Soldier";
+					atlOffset=0.096435547;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=26;
+			atlOffset=0.096435547;
+		};
+		class Item14
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7017.5908,44.414135,12438.613};
+						angles[]={0,3.9386146,0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						name="Afgan_Soldier_3";
+						description="Afgan Soldier";
+						isPlayable=1;
+						class Inventory
+						{
+							class handgun
+							{
+								name="CUP_hgun_Makarov";
+								class primaryMuzzleMag
+								{
+									name="CUP_8Rnd_9x18_Makarov_M";
+									ammoLeft=8;
+								};
+							};
+							class uniform
+							{
+								typeName="CUP_U_B_CDF_DST_1";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="CUP_8Rnd_9x18_Makarov_M";
+										count=2;
+										ammoLeft=8;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=2;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="CUP_V_CDF_6B3_4_DST";
+								isBackpack=0;
+							};
+							class backpack
+							{
+								typeName="CUP_B_AssaultPack_Coyote";
+								isBackpack=1;
+							};
+							map="ItemMap";
+							headgear="CUP_H_CDF_H_PASGT_DST";
+						};
+					};
+					id=29;
+					type="CUP_B_US_Soldier";
+					atlOffset=0.14608765;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=28;
+			atlOffset=0.14608765;
+		};
+		class Item15
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4111.3613,382.07971,1686.1938};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						name="Sniper_3";
+						description="Sniper";
+						isPlayable=1;
+						class Inventory
+						{
+							class handgun
+							{
+								name="CUP_hgun_Makarov";
+								class primaryMuzzleMag
+								{
+									name="CUP_8Rnd_9x18_Makarov_M";
+									ammoLeft=8;
+								};
+							};
+							class uniform
+							{
+								typeName="CUP_U_B_BAF_DDPM_Ghillie";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="CUP_8Rnd_9x18_Makarov_M";
+										count=2;
+										ammoLeft=8;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=2;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="CUP_V_BAF_Osprey_Mk2_DDPM_Empty";
+								isBackpack=0;
+							};
+							class backpack
+							{
+								typeName="CUP_B_AssaultPack_Coyote";
+								isBackpack=1;
+							};
+							map="ItemMap";
+						};
+					};
+					id=31;
+					type="CUP_B_US_Soldier";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=30;
+		};
+		class Item16
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3461.5498,111.85613,9445.042};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						name="USMC_Soldier_4";
+						description="USMC Soldier";
+						isPlayable=1;
+						class Inventory
+						{
+							class handgun
+							{
+								name="CUP_hgun_Makarov";
+								class primaryMuzzleMag
+								{
+									name="CUP_8Rnd_9x18_Makarov_M";
+									ammoLeft=8;
+								};
+							};
+							class uniform
+							{
+								typeName="CUP_U_B_USMC_MARPAT_WDL_TwoKneepads";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="CUP_8Rnd_9x18_Makarov_M";
+										count=1;
+										ammoLeft=8;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=3;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="CUP_V_B_MTV";
+								isBackpack=0;
+							};
+							class backpack
+							{
+								typeName="CUP_B_AssaultPack_Coyote";
+								isBackpack=1;
+							};
+							map="ItemMap";
+							headgear="CUP_H_USMC_HelmetWDL";
+						};
+					};
+					id=33;
+					type="CUP_B_US_Soldier";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=32;
+		};
+		class Item17
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2710.9043,204.83905,10816.506};
+						angles[]={0,1.0028459,0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						name="US_Soldier_4";
+						description="US Soldier";
+						isPlayable=1;
+						class Inventory
+						{
+							class handgun
+							{
+								name="CUP_hgun_Makarov";
+								class primaryMuzzleMag
+								{
+									name="CUP_8Rnd_9x18_Makarov_M";
+									ammoLeft=8;
+								};
+							};
+							class uniform
+							{
+								typeName="CUP_U_B_USArmy_TwoKnee";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="CUP_8Rnd_9x18_Makarov_M";
+										count=2;
+										ammoLeft=8;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=2;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="CUP_V_B_IOTV_tl";
+								isBackpack=0;
+							};
+							class backpack
+							{
+								typeName="CUP_B_AssaultPack_ACU";
+								isBackpack=1;
+							};
+							map="ItemMap";
+							headgear="CUP_H_USArmy_HelmetMICH_earpro";
+						};
+					};
+					id=35;
+					type="CUP_B_US_Soldier";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=34;
+		};
+		class Item18
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8594.4033,250.58406,8345.6875};
+						angles[]={0,3.6386094,0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						name="Afgan_Soldier_4";
+						description="Afgan Soldier";
+						isPlayable=1;
+						class Inventory
+						{
+							class handgun
+							{
+								name="CUP_hgun_Makarov";
+								class primaryMuzzleMag
+								{
+									name="CUP_8Rnd_9x18_Makarov_M";
+									ammoLeft=8;
+								};
+							};
+							class uniform
+							{
+								typeName="CUP_U_B_CDF_DST_1";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="CUP_8Rnd_9x18_Makarov_M";
+										count=2;
+										ammoLeft=8;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=2;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="CUP_V_CDF_6B3_4_DST";
+								isBackpack=0;
+							};
+							class backpack
+							{
+								typeName="CUP_B_AssaultPack_Coyote";
+								isBackpack=1;
+							};
+							map="ItemMap";
+							headgear="CUP_H_CDF_H_PASGT_DST";
+						};
+					};
+					id=37;
+					type="CUP_B_US_Soldier";
+					atlOffset=0.10009766;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=36;
+			atlOffset=0.10009766;
+		};
+		class Item19
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={6747.5156,243.76602,6773.5742};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						name="Sniper_4";
+						description="Sniper";
+						isPlayable=1;
+						class Inventory
+						{
+							class handgun
+							{
+								name="CUP_hgun_Makarov";
+								class primaryMuzzleMag
+								{
+									name="CUP_8Rnd_9x18_Makarov_M";
+									ammoLeft=8;
+								};
+							};
+							class uniform
+							{
+								typeName="CUP_U_B_BAF_DDPM_Ghillie";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="CUP_8Rnd_9x18_Makarov_M";
+										count=2;
+										ammoLeft=8;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=2;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="CUP_V_BAF_Osprey_Mk2_DDPM_Empty";
+								isBackpack=0;
+							};
+							class backpack
+							{
+								typeName="CUP_B_AssaultPack_Coyote";
+								isBackpack=1;
+							};
+							map="ItemMap";
+						};
+					};
+					id=39;
+					type="CUP_B_US_Soldier";
+					atlOffset=0.014022827;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=38;
+			atlOffset=0.014022827;
+		};
+		class Item20
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={6126.9883,311.09274,5319.501};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						name="USMC_Soldier_5";
+						description="USMC Soldier";
+						isPlayable=1;
+						class Inventory
+						{
+							class handgun
+							{
+								name="CUP_hgun_Makarov";
+								class primaryMuzzleMag
+								{
+									name="CUP_8Rnd_9x18_Makarov_M";
+									ammoLeft=8;
+								};
+							};
+							class uniform
+							{
+								typeName="CUP_U_B_USMC_MARPAT_WDL_TwoKneepads";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="CUP_8Rnd_9x18_Makarov_M";
+										count=1;
+										ammoLeft=8;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=3;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="CUP_V_B_MTV";
+								isBackpack=0;
+							};
+							class backpack
+							{
+								typeName="CUP_B_AssaultPack_Coyote";
+								isBackpack=1;
+							};
+							map="ItemMap";
+							headgear="CUP_H_USMC_HelmetWDL";
+						};
+					};
+					id=41;
+					type="CUP_B_US_Soldier";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=40;
+		};
+		class Item21
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3805.3252,320.94196,3723.6316};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						name="US_Soldier_5";
+						description="US Soldier";
+						isPlayable=1;
+						class Inventory
+						{
+							class handgun
+							{
+								name="CUP_hgun_Makarov";
+								class primaryMuzzleMag
+								{
+									name="CUP_8Rnd_9x18_Makarov_M";
+									ammoLeft=8;
+								};
+							};
+							class uniform
+							{
+								typeName="CUP_U_B_USArmy_TwoKnee";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="CUP_8Rnd_9x18_Makarov_M";
+										count=2;
+										ammoLeft=8;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=2;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="CUP_V_B_IOTV_tl";
+								isBackpack=0;
+							};
+							class backpack
+							{
+								typeName="CUP_B_AssaultPack_ACU";
+								isBackpack=1;
+							};
+							map="ItemMap";
+							headgear="CUP_H_USArmy_HelmetMICH_earpro";
+						};
+					};
+					id=43;
+					type="CUP_B_US_Soldier";
+					atlOffset=0.082519531;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=42;
+			atlOffset=0.082519531;
+		};
+		class Item22
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={6943.2354,141.50645,9149.0127};
+						angles[]={0,3.8477993,0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						name="Afgan_Soldier_5";
+						description="Afgan Soldier";
+						isPlayable=1;
+						class Inventory
+						{
+							class handgun
+							{
+								name="CUP_hgun_Makarov";
+								class primaryMuzzleMag
+								{
+									name="CUP_8Rnd_9x18_Makarov_M";
+									ammoLeft=8;
+								};
+							};
+							class uniform
+							{
+								typeName="CUP_U_B_CDF_DST_1";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="CUP_8Rnd_9x18_Makarov_M";
+										count=2;
+										ammoLeft=8;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=2;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="CUP_V_CDF_6B3_4_DST";
+								isBackpack=0;
+							};
+							class backpack
+							{
+								typeName="CUP_B_AssaultPack_Coyote";
+								isBackpack=1;
+							};
+							map="ItemMap";
+							headgear="CUP_H_CDF_H_PASGT_DST";
+						};
+					};
+					id=45;
+					type="CUP_B_US_Soldier";
+					atlOffset=0.0066986084;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=44;
+			atlOffset=0.0066986084;
+		};
+		class Item23
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1477.2988,260.59576,11140.73};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						name="Sniper_5";
+						description="Sniper";
+						isPlayable=1;
+						class Inventory
+						{
+							class handgun
+							{
+								name="CUP_hgun_Makarov";
+								class primaryMuzzleMag
+								{
+									name="CUP_8Rnd_9x18_Makarov_M";
+									ammoLeft=8;
+								};
+							};
+							class uniform
+							{
+								typeName="CUP_U_B_BAF_DDPM_Ghillie";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="CUP_8Rnd_9x18_Makarov_M";
+										count=2;
+										ammoLeft=8;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=2;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="CUP_V_BAF_Osprey_Mk2_DDPM_Empty";
+								isBackpack=0;
+							};
+							class backpack
+							{
+								typeName="CUP_B_AssaultPack_Coyote";
+								isBackpack=1;
+							};
+							map="ItemMap";
+						};
+					};
+					id=47;
+					type="CUP_B_US_Soldier";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=46;
+		};
+		class Item24
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={6080.9277,122.91677,7735.0908};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						name="USMC_Soldier_6";
+						description="USMC Soldier";
+						isPlayable=1;
+						class Inventory
+						{
+							class handgun
+							{
+								name="CUP_hgun_Makarov";
+								class primaryMuzzleMag
+								{
+									name="CUP_8Rnd_9x18_Makarov_M";
+									ammoLeft=8;
+								};
+							};
+							class uniform
+							{
+								typeName="CUP_U_B_USMC_MARPAT_WDL_TwoKneepads";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="CUP_8Rnd_9x18_Makarov_M";
+										count=1;
+										ammoLeft=8;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=3;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="CUP_V_B_MTV";
+								isBackpack=0;
+							};
+							class backpack
+							{
+								typeName="CUP_B_AssaultPack_Coyote";
+								isBackpack=1;
+							};
+							map="ItemMap";
+							headgear="CUP_H_USMC_HelmetWDL";
+						};
+					};
+					id=49;
+					type="CUP_B_US_Soldier";
+					atlOffset=0.080162048;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=48;
+			atlOffset=0.080162048;
+		};
+		class Item25
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4057.4092,164.87163,5646.8467};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						name="US_Soldier_6";
+						description="US Soldier";
+						isPlayable=1;
+						class Inventory
+						{
+							class handgun
+							{
+								name="CUP_hgun_Makarov";
+								class primaryMuzzleMag
+								{
+									name="CUP_8Rnd_9x18_Makarov_M";
+									ammoLeft=8;
+								};
+							};
+							class uniform
+							{
+								typeName="CUP_U_B_USArmy_TwoKnee";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="CUP_8Rnd_9x18_Makarov_M";
+										count=2;
+										ammoLeft=8;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=2;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="CUP_V_B_IOTV_tl";
+								isBackpack=0;
+							};
+							class backpack
+							{
+								typeName="CUP_B_AssaultPack_ACU";
+								isBackpack=1;
+							};
+							map="ItemMap";
+							headgear="CUP_H_USArmy_HelmetMICH_earpro";
+						};
+					};
+					id=51;
+					type="CUP_B_US_Soldier";
+					atlOffset=0.035919189;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=50;
+			atlOffset=0.035919189;
+		};
+		class Item26
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5171.9302,204.45131,5414.9619};
+						angles[]={0,6.2137127,0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						name="Afgan_Soldier_6";
+						description="Afgan Soldier";
+						isPlayable=1;
+						class Inventory
+						{
+							class handgun
+							{
+								name="CUP_hgun_Makarov";
+								class primaryMuzzleMag
+								{
+									name="CUP_8Rnd_9x18_Makarov_M";
+									ammoLeft=8;
+								};
+							};
+							class uniform
+							{
+								typeName="CUP_U_B_CDF_DST_1";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="CUP_8Rnd_9x18_Makarov_M";
+										count=2;
+										ammoLeft=8;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=2;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="CUP_V_CDF_6B3_4_DST";
+								isBackpack=0;
+							};
+							class backpack
+							{
+								typeName="CUP_B_AssaultPack_Coyote";
+								isBackpack=1;
+							};
+							map="ItemMap";
+							headgear="CUP_H_CDF_H_PASGT_DST";
+						};
+					};
+					id=53;
+					type="CUP_B_US_Soldier";
+					atlOffset=0.010406494;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=52;
+			atlOffset=0.010406494;
+		};
+		class Item27
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5437.2422,85.493942,9895.8691};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						name="Sniper_6";
+						description="Sniper";
+						isPlayable=1;
+						class Inventory
+						{
+							class handgun
+							{
+								name="CUP_hgun_Makarov";
+								class primaryMuzzleMag
+								{
+									name="CUP_8Rnd_9x18_Makarov_M";
+									ammoLeft=8;
+								};
+							};
+							class uniform
+							{
+								typeName="CUP_U_B_BAF_DDPM_Ghillie";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="CUP_8Rnd_9x18_Makarov_M";
+										count=2;
+										ammoLeft=8;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=2;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="CUP_V_BAF_Osprey_Mk2_DDPM_Empty";
+								isBackpack=0;
+							};
+							class backpack
+							{
+								typeName="CUP_B_AssaultPack_Coyote";
+								isBackpack=1;
+							};
+							map="ItemMap";
+						};
+					};
+					id=55;
+					type="CUP_B_US_Soldier";
+					atlOffset=0.06942749;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=54;
+			atlOffset=0.06942749;
+		};
+	};
+};
