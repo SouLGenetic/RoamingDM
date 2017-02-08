@@ -62,7 +62,6 @@ _i = 0;
  if (_c > 0) then
  {
 
-    if (player distance (getMarkerPos "loot1") < 200) exitWith {hint "Failsafe"};
      _ranNum = floor(random _c);
      _selGun = _gunList call bis_fnc_selectRandom;
      _arrNum = _gunList find _selGun;
