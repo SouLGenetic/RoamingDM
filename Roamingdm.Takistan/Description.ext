@@ -12,6 +12,9 @@ disabledAI = 1;
 aiKills = 0;
 loadScreen = "Images\Load.paa";
 disabledChannels[]={{0,true,true},{1,false,true},{6,true,true}};
+enableDebugConsole = 1;
+
+#include "Core\Dialogs\Master.hpp"
 
 class CfgFunctions {
     #include "Functions.hpp"
