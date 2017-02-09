@@ -119,6 +119,10 @@ uisleep 0.123;
 
 } forEach _houses;
 
+sleep 2;
+
+loot enableSimulationGlobal false;
+
 if (_lootrespawn) then {
 
 sleep 360;
