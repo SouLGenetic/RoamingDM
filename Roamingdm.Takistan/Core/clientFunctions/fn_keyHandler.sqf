@@ -49,6 +49,10 @@ switch (_code) do
 	    default {};
             };
         };
+	
+	case 36: {
+        createDialog "infoDialog";
+    	};
 
 
 
