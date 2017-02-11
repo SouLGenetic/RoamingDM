@@ -1,7 +1,7 @@
 /*
 	Author = Genetic
 	Filename = Itemspawns.sqf
-	Desription = randomly creates guns in and around buildings
+	Desription = randomly creates crates of loot in and around buildings
 */
 
 private ["_gunList", "_magList","_i", "_c", "_rNum", "_houses"];
@@ -118,6 +118,10 @@ _i = 0;
 uisleep 0.123;
 
 } forEach _houses;
+
+sleep 2;
+
+loot enableSimulationGlobal false;
 
 if (_lootrespawn) then {
 

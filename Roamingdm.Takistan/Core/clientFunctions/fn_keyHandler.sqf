@@ -17,7 +17,7 @@ switch (_code) do
 	if((_code in (actionKeys "PushToTalk") || _code in (actionKeys "PushToTalkSide") || _code in (actionKeys "PushToTalkAll") || _code in (actionKeys "PushToTalkDirect") || _code in (actionKeys "VoiceOverNet"))) exitWith {   if (currentChannel in [0, 1, 2]) then    { titleText ["Please no voice in SIDE, GLOBAL OR COMMAND channel.","PLAIN", 0]; setCurrentChannel 5;};};
 
 
-	//END = Faded Sound
+	// - fade
 	 case 12: {
         switch (soundVolume) do {
 	    case 1: {1 fadeSound 0.9; hint "90% VOL"};
@@ -33,7 +33,7 @@ switch (_code) do
             default {};
             };
         };
-
+	// = up
         case 13: {
         switch (soundVolume) do {
 	    case 0.1: {1 fadeSound 0.2; hint "20% VOL"};
@@ -49,6 +49,10 @@ switch (_code) do
 	    default {};
             };
         };
+	
+	case 36: {
+        createDialog "infoDialog";
+    	};
 
 
 

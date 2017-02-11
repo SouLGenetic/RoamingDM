@@ -6,3 +6,4 @@ diag_log "--------------------------------------------------------------------";
 diag_log "----------------------Disabling Player Fatigue----------------------";
 diag_log "----------------------Player Fatigue Disabled-----------------------";
 diag_log "----------------------------Setup Key Bindings----------------------";
+systemChat format ["Welcome %1 To The DEATHMATCH", profileName];
