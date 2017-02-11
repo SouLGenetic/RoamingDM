@@ -15,39 +15,39 @@
   Default respawn delay is 30 seconds, to set a custom
   respawn delay time, put that in the init as well.
   Like this:
-  veh = [this, 15] execVM "vehicle.sqf"
+  veh = [this, 15] execVM "Core\clientFuntions\vehicleRespawn.sqf"
 
   Default respawn time when vehicle is deserted, but not
   destroyed is 120 seconds. To set a custom timer for this
   first put the respawn delay, then the deserted vehicle timer. (0 = disabled)
   Like this:
-  veh = [this, 15, 10] execVM "vehicle.sqf"
+  veh = [this, 15, 10] execVM "Core\clientFuntions\vehicleRespawn.sqf"
 
   By default the number of respawns is infinite. To set a limit
   First set the other values then the number of respawns you want (0 = infinite).
   Like this:
-  veh = [this, 15, 10, 5] execVM "vehicle.sqf"
+  veh = [this, 15, 10, 5] execVM "Core\clientFuntions\vehicleRespawn.sqf"
 
 
   Set this value to TRUE to add a special explosion effect to the wreck when respawning.
   Default value is FALSE, which will simply have the wreck disappear.
   Like this:
-  veh = [this, 15, 10, 5, TRUE] execVM "vehicle.sqf"
+  veh = [this, 15, 10, 5, TRUE] execVM "Core\clientFuntions\vehicleRespawn.sqf"
 
   By default the vehicle will respawn to the point where it first
   was when the mission started (static). This can be changed to
   dynamic. Then the vehicle will respawn to the position where it was destroyed.
   First set all the other values then set TRUE for dynamic or FALSE for static.
   Like this:
-  veh = [this, 15, 10, 5, TRUE, TRUE] execVM "vehicle.sqf"
+  veh = [this, 15, 10, 5, TRUE, TRUE] execVM "Core\clientFuntions\vehicleRespawn.sqf"
 
   If you you want to set the INIT field of the respawned vehicle, first set all other
   values, then set init commands. Those must be inside quotations.
   Like this:
-  veh = [this, 15, 10, 5, TRUE, FALSE, "this setDammage 0.5"] execVM "vehicle.sqf"
+  veh = [this, 15, 10, 5, TRUE, FALSE, "this setDammage 0.5"] execVM "Core\clientFuntions\vehicleRespawn.sqf"
 
   Default values of all settings are:
-  veh = [this, 30, 120, 0, FALSE, FALSE] execVM "vehicle.sqf"
+  veh = [this, 30, 120, 0, FALSE, FALSE] execVM "Core\clientFuntions\vehicleRespawn.sqf"
 
 
 
