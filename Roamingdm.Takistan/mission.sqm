@@ -3336,7 +3336,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAG";
 				presence=0.84706765;
 			};
@@ -3355,7 +3355,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAB";
 				presence=0.85130006;
 			};
@@ -3374,7 +3374,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAW";
 				presence=0.84706765;
 			};
@@ -3393,7 +3393,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="PICKUP";
 				presence=0.50423253;
 			};
@@ -3413,7 +3413,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="pickupARMED1";
 				presence=0.50000012;
 			};
@@ -3433,7 +3433,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="pickupARMED2";
 				presence=0.50423253;
 			};
@@ -3453,7 +3453,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="LANDROVERM2";
 				presence=0.50423253;
 			};
@@ -3473,7 +3473,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="LANDROVERSPG9";
 				presence=0.50423253;
 			};
@@ -3493,7 +3493,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="LANDROVER";
 				presence=0.50423253;
 			};
@@ -3512,7 +3512,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="UAZ";
 				presence=0.50423253;
 			};
@@ -3531,7 +3531,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="UAZAGS30";
 				presence=0.50423253;
 			};
@@ -3551,7 +3551,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,15,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,15,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="MI17";
 				presence=0.39841926;
 			};
@@ -3571,7 +3571,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="BTR40ARMED";
 				presence=0.50000012;
 			};
@@ -3591,7 +3591,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="BTR40";
 				presence=0.4957675;
 			};
@@ -3611,7 +3611,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="HMVM2";
 				presence=0.50000012;
 			};
@@ -3631,7 +3631,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="HMVGL";
 				presence=0.4957675;
 			};
@@ -3650,7 +3650,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,15,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,15,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="BLACKHAWK";
 				presence=0.39841926;
 			};
@@ -3670,7 +3670,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,15,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,15,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="C130";
 				presence=0.19949047;
 			};
@@ -3690,7 +3690,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="LittleBird_1";
 				presence=0.19949047;
 			};
@@ -3710,7 +3710,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="LittleBird_2";
 				presence=0.19949047;
 			};
@@ -3730,7 +3730,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="LittleBird_3";
 				presence=0.19949047;
 			};
@@ -3750,7 +3750,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="LittleBird_4";
 				presence=0.19949047;
 			};
@@ -3770,7 +3770,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="LittleBird_5";
 				presence=0.19949047;
 			};
@@ -3790,7 +3790,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="LittleBird_6";
 				presence=0.19949047;
 			};
@@ -3810,7 +3810,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="LittleBird_7";
 				presence=0.19949047;
 			};
@@ -3830,7 +3830,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="LittleBird_8";
 				presence=0.19949047;
 			};
@@ -3850,7 +3850,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="LittleBird_9";
 				presence=0.19949047;
 			};
@@ -3870,7 +3870,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="LittleBird_10";
 				presence=0.19949047;
 			};
@@ -3890,7 +3890,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="LittleBird_11";
 				presence=0.19949047;
 			};
@@ -3910,7 +3910,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="LittleBird_12";
 				presence=0.19949047;
 			};
@@ -3930,7 +3930,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="LittleBird_13";
 				presence=0.19949047;
 			};
@@ -3950,7 +3950,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="LittleBird_14";
 				presence=0.19949047;
 			};
@@ -3970,7 +3970,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="LittleBird_15";
 				presence=0.19949047;
 			};
@@ -3990,7 +3990,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="LittleBird_16";
 				presence=0.19949047;
 			};
@@ -4010,7 +4010,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="LittleBird_17";
 				presence=0.19949047;
 			};
@@ -4029,7 +4029,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="LittleBird_18";
 				presence=0.19949047;
 			};
@@ -4049,7 +4049,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="LittleBird_19";
 				presence=0.19949047;
 			};
@@ -4069,7 +4069,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="LittleBird_20";
 				presence=0.19949047;
 			};
@@ -4089,7 +4089,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="LittleBird_21";
 				presence=0.19949047;
 			};
@@ -4108,7 +4108,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="LittleBird_22";
 				presence=0.19949047;
 			};
@@ -4128,7 +4128,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="LittleBird_23";
 				presence=0.19949047;
 			};
@@ -4148,7 +4148,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="HUEY_1";
 				presence=0.20372298;
 			};
@@ -4168,7 +4168,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="HUEY_2";
 				presence=0.20372298;
 			};
@@ -4188,7 +4188,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="HUEY_3";
 				presence=0.20372298;
 			};
@@ -4208,7 +4208,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="HUEY_4";
 				presence=0.20372298;
 			};
@@ -4228,7 +4228,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="HUEY_5";
 				presence=0.20372298;
 			};
@@ -4248,7 +4248,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="HUEY_6";
 				presence=0.20372298;
 			};
@@ -4267,7 +4267,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="HUEY_7";
 				presence=0.20372298;
 			};
@@ -4287,7 +4287,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				presence=0.50423253;
 			};
 			id=269;
@@ -4306,7 +4306,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 			};
 			id=270;
 			type="CUP_C_Ural_Open_Civ_02";
@@ -4324,7 +4324,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 			};
 			id=271;
 			type="CUP_C_Ural_Open_Civ_02";
@@ -4342,7 +4342,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 			};
 			id=272;
 			type="CUP_C_Ural_Open_Civ_02";
@@ -4360,7 +4360,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 			};
 			id=273;
 			type="CUP_C_Ural_Open_Civ_02";
@@ -4378,7 +4378,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 			};
 			id=274;
 			type="CUP_C_Ural_Open_Civ_02";
@@ -4396,7 +4396,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 			};
 			id=275;
 			type="CUP_C_Ural_Open_Civ_02";
@@ -4414,7 +4414,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 			};
 			id=276;
 			type="CUP_C_Ural_Open_Civ_02";
@@ -4432,7 +4432,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 			};
 			id=277;
 			type="CUP_C_Ural_Open_Civ_02";
@@ -4450,7 +4450,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 			};
 			id=278;
 			type="CUP_C_Ural_Open_Civ_02";
@@ -4468,7 +4468,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="URAL_1";
 				presence=0.4957675;
 			};
@@ -4488,7 +4488,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="URAL_2";
 				presence=0.4957675;
 			};
@@ -4508,7 +4508,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="URAL_3";
 				presence=0.4957675;
 			};
@@ -4528,7 +4528,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="URAL_4";
 				presence=0.4957675;
 			};
@@ -4548,7 +4548,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="URAL_5";
 				presence=0.4957675;
 			};
@@ -4568,7 +4568,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="URAL_6";
 				presence=0.4957675;
 			};
@@ -4588,7 +4588,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="URAL_7";
 				presence=0.4957675;
 			};
@@ -4608,7 +4608,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="URAL_8";
 				presence=0.4957675;
 			};
@@ -4628,7 +4628,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="URAL_9";
 				presence=0.4957675;
 			};
@@ -4648,7 +4648,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="URAL_10";
 				presence=0.4957675;
 			};
@@ -4668,7 +4668,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="URAL_11";
 				presence=0.4957675;
 			};
@@ -4688,7 +4688,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="URAL_12";
 				presence=0.4957675;
 			};
@@ -4708,7 +4708,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="URAL_13";
 				presence=0.4957675;
 			};
@@ -4727,7 +4727,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="URAL_14";
 				presence=0.4957675;
 			};
@@ -4746,7 +4746,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="URAL_15";
 				presence=0.4957675;
 			};
@@ -4766,7 +4766,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="URAL_16";
 				presence=0.4957675;
 			};
@@ -4786,7 +4786,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="HMVU_1";
 				presence=0.7031616;
 			};
@@ -4805,7 +4805,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="HMVU_2";
 				presence=0.7031616;
 			};
@@ -4824,7 +4824,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="HMVU_3";
 				presence=0.7031616;
 			};
@@ -4843,7 +4843,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="HMVU_4";
 				presence=0.7031616;
 			};
@@ -4862,7 +4862,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="HMVU_5";
 				presence=0.7031616;
 			};
@@ -4882,7 +4882,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="BTR40_1";
 				presence=0.4957675;
 			};
@@ -4902,7 +4902,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="BTR40_2";
 				presence=0.4957675;
 			};
@@ -4922,7 +4922,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="BTR40_3";
 				presence=0.4957675;
 			};
@@ -4941,7 +4941,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="BTR40_4";
 				presence=0.4957675;
 			};
@@ -4961,7 +4961,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="BTR40_5";
 				presence=0.4957675;
 			};
@@ -4981,7 +4981,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="BTR40_6";
 				presence=0.4957675;
 			};
@@ -5001,7 +5001,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="BTR40_7";
 				presence=0.4957675;
 			};
@@ -5021,7 +5021,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="pickupARMED1_1";
 				presence=0.50000012;
 			};
@@ -5040,7 +5040,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="pickupARMED1_2";
 				presence=0.50000012;
 			};
@@ -5060,7 +5060,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="pickupARMED1_3";
 				presence=0.50000012;
 			};
@@ -5080,7 +5080,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="pickupARMED2_1";
 				presence=0.50423253;
 			};
@@ -5100,7 +5100,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="pickupARMED2_2";
 				presence=0.50423253;
 			};
@@ -5120,7 +5120,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="pickupARMED2_3";
 				presence=0.50423253;
 			};
@@ -5140,7 +5140,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="LANDROVERM2_1";
 				presence=0.50423253;
 			};
@@ -5160,7 +5160,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="LANDROVERM2_2";
 				presence=0.50423253;
 			};
@@ -5180,7 +5180,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="LANDROVERM2_3";
 				presence=0.50423253;
 			};
@@ -5200,7 +5200,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="LANDROVERM2_4";
 				presence=0.50423253;
 			};
@@ -5220,7 +5220,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="LANDROVERSPG9_1";
 				presence=0.50423253;
 			};
@@ -5240,7 +5240,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="UAZAGS30_1";
 				presence=0.50423253;
 			};
@@ -5260,7 +5260,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="UAZAGS30_2";
 				presence=0.50423253;
 			};
@@ -5280,7 +5280,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="UAZAGS30_3";
 				presence=0.50423253;
 			};
@@ -5300,7 +5300,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="UAZAGS30_4";
 				presence=0.50423253;
 			};
@@ -5320,7 +5320,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="BTR40ARMED_1";
 				presence=0.50000012;
 			};
@@ -5340,7 +5340,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="BTR40ARMED_2";
 				presence=0.50000012;
 			};
@@ -5360,7 +5360,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="BTR40ARMED_3";
 				presence=0.50000012;
 			};
@@ -5379,7 +5379,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="HMVM2_1";
 				presence=0.50000012;
 			};
@@ -5398,7 +5398,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="HMVM2_2";
 				presence=0.50000012;
 			};
@@ -5418,7 +5418,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="HMVM2_3";
 				presence=0.50000012;
 			};
@@ -5438,7 +5438,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="HMVM2_4";
 				presence=0.50000012;
 			};
@@ -5457,7 +5457,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="HMVGL_1";
 				presence=0.4957675;
 			};
@@ -5477,7 +5477,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="HMVGL_2";
 				presence=0.4957675;
 			};
@@ -5497,7 +5497,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="PICKUP_1";
 				presence=0.50423253;
 			};
@@ -5517,7 +5517,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="PICKUP_2";
 				presence=0.50423253;
 			};
@@ -5537,7 +5537,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="PICKUP_3";
 				presence=0.50423253;
 			};
@@ -5557,7 +5557,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="PICKUP_4";
 				presence=0.50423253;
 			};
@@ -5577,7 +5577,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="PICKUP_5";
 				presence=0.50423253;
 			};
@@ -5597,7 +5597,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="PICKUP_6";
 				presence=0.50423253;
 			};
@@ -5616,7 +5616,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="PICKUP_7";
 				presence=0.50423253;
 			};
@@ -5636,7 +5636,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="PICKUP_8";
 				presence=0.50423253;
 			};
@@ -5656,7 +5656,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="PICKUP_9";
 				presence=0.50423253;
 			};
@@ -5675,7 +5675,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="PICKUP_10";
 				presence=0.50423253;
 			};
@@ -5695,7 +5695,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="PICKUP_11";
 				presence=0.50423253;
 			};
@@ -5715,7 +5715,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="PICKUP_12";
 				presence=0.50423253;
 			};
@@ -5735,7 +5735,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="PICKUP_13";
 				presence=0.50423253;
 			};
@@ -5755,7 +5755,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="PICKUP_14";
 				presence=0.50423253;
 			};
@@ -5775,7 +5775,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="UAZ_1";
 				presence=0.50423253;
 			};
@@ -5795,7 +5795,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="UAZ_2";
 				presence=0.50423253;
 			};
@@ -5815,7 +5815,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="UAZ_3";
 				presence=0.50423253;
 			};
@@ -5835,7 +5835,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="UAZ_4";
 				presence=0.50423253;
 			};
@@ -5855,7 +5855,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="UAZ_5";
 				presence=0.50423253;
 			};
@@ -5875,7 +5875,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="UAZ_6";
 				presence=0.50423253;
 			};
@@ -5895,7 +5895,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="UAZ_7";
 				presence=0.50423253;
 			};
@@ -5915,7 +5915,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="UAZ_8";
 				presence=0.50423253;
 			};
@@ -5935,7 +5935,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="UAZ_9";
 				presence=0.50423253;
 			};
@@ -5955,7 +5955,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="LANDROVER_1";
 				presence=0.50423253;
 			};
@@ -5975,7 +5975,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="LANDROVER_2";
 				presence=0.50423253;
 			};
@@ -5995,7 +5995,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="LANDROVER_3";
 				presence=0.50423253;
 			};
@@ -6014,7 +6014,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="LANDROVER_4";
 				presence=0.50423253;
 			};
@@ -6033,7 +6033,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="LANDROVER_5";
 				presence=0.50423253;
 			};
@@ -6052,7 +6052,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="LANDROVER_6";
 				presence=0.50423253;
 			};
@@ -6072,7 +6072,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAW_1";
 				presence=0.84706765;
 			};
@@ -6091,7 +6091,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAW_2";
 				presence=0.84706765;
 			};
@@ -6111,7 +6111,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAW_3";
 				presence=0.84706765;
 			};
@@ -6131,7 +6131,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAW_4";
 				presence=0.84706765;
 			};
@@ -6151,7 +6151,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAW_5";
 				presence=0.84706765;
 			};
@@ -6171,7 +6171,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAW_6";
 				presence=0.84706765;
 			};
@@ -6191,7 +6191,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAW_7";
 				presence=0.84706765;
 			};
@@ -6210,7 +6210,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAW_8";
 				presence=0.84706765;
 			};
@@ -6229,7 +6229,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAW_9";
 				presence=0.84706765;
 			};
@@ -6249,7 +6249,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAW_10";
 				presence=0.84706765;
 			};
@@ -6269,7 +6269,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAW_11";
 				presence=0.84706765;
 			};
@@ -6289,7 +6289,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAW_12";
 				presence=0.84706765;
 			};
@@ -6309,7 +6309,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAW_13";
 				presence=0.84706765;
 			};
@@ -6329,7 +6329,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAW_14";
 				presence=0.84706765;
 			};
@@ -6348,7 +6348,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAW_15";
 				presence=0.84706765;
 			};
@@ -6368,7 +6368,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAW_16";
 				presence=0.84706765;
 			};
@@ -6388,7 +6388,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAW_17";
 				presence=0.84706765;
 			};
@@ -6407,7 +6407,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAW_18";
 				presence=0.84706765;
 			};
@@ -6427,7 +6427,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAW_19";
 				presence=0.84706765;
 			};
@@ -6447,7 +6447,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAW_20";
 				presence=0.84706765;
 			};
@@ -6467,7 +6467,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAW_21";
 				presence=0.84706765;
 			};
@@ -6487,7 +6487,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAW_22";
 				presence=0.84706765;
 			};
@@ -6507,7 +6507,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAW_23";
 				presence=0.84706765;
 			};
@@ -6527,7 +6527,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAW_24";
 				presence=0.84706765;
 			};
@@ -6546,7 +6546,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAW_25";
 				presence=0.84706765;
 			};
@@ -6566,7 +6566,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAW_26";
 				presence=0.84706765;
 			};
@@ -6586,7 +6586,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAB_1";
 				presence=0.85130006;
 			};
@@ -6606,7 +6606,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAB_2";
 				presence=0.85130006;
 			};
@@ -6626,7 +6626,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAB_3";
 				presence=0.85130006;
 			};
@@ -6646,7 +6646,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAB_4";
 				presence=0.85130006;
 			};
@@ -6666,7 +6666,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAB_5";
 				presence=0.85130006;
 			};
@@ -6686,7 +6686,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAB_6";
 				presence=0.85130006;
 			};
@@ -6706,7 +6706,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAB_7";
 				presence=0.85130006;
 			};
@@ -6726,7 +6726,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAB_8";
 				presence=0.85130006;
 			};
@@ -6745,7 +6745,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAB_9";
 				presence=0.85130006;
 			};
@@ -6765,7 +6765,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAB_10";
 				presence=0.85130006;
 			};
@@ -6785,7 +6785,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAB_11";
 				presence=0.85130006;
 			};
@@ -6804,7 +6804,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAB_12";
 				presence=0.85130006;
 			};
@@ -6824,7 +6824,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAB_13";
 				presence=0.85130006;
 			};
@@ -6843,7 +6843,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAB_14";
 				presence=0.85130006;
 			};
@@ -6863,7 +6863,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAB_15";
 				presence=0.85130006;
 			};
@@ -6883,7 +6883,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAB_16";
 				presence=0.85130006;
 			};
@@ -6903,7 +6903,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAB_17";
 				presence=0.85130006;
 			};
@@ -6923,7 +6923,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAB_18";
 				presence=0.85130006;
 			};
@@ -6943,7 +6943,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAB_19";
 				presence=0.85130006;
 			};
@@ -6963,7 +6963,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAB_20";
 				presence=0.85130006;
 			};
@@ -6983,7 +6983,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAB_21";
 				presence=0.85130006;
 			};
@@ -7002,7 +7002,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAB_22";
 				presence=0.85130006;
 			};
@@ -7022,7 +7022,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAB_23";
 				presence=0.85130006;
 			};
@@ -7042,7 +7042,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAB_24";
 				presence=0.85130006;
 			};
@@ -7062,7 +7062,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAB_25";
 				presence=0.85130006;
 			};
@@ -7082,7 +7082,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAG_1";
 				presence=0.84706765;
 			};
@@ -7102,7 +7102,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAG_2";
 				presence=0.84706765;
 			};
@@ -7122,7 +7122,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAG_3";
 				presence=0.84706765;
 			};
@@ -7142,7 +7142,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAG_4";
 				presence=0.84706765;
 			};
@@ -7161,7 +7161,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAG_5";
 				presence=0.84706765;
 			};
@@ -7181,7 +7181,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAG_6";
 				presence=0.84706765;
 			};
@@ -7200,7 +7200,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAG_7";
 				presence=0.84706765;
 			};
@@ -7220,7 +7220,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAG_8";
 				presence=0.84706765;
 			};
@@ -7239,7 +7239,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAG_9";
 				presence=0.84706765;
 			};
@@ -7258,7 +7258,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAG_10";
 				presence=0.84706765;
 			};
@@ -7278,7 +7278,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAG_11";
 				presence=0.84706765;
 			};
@@ -7298,7 +7298,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAG_12";
 				presence=0.84706765;
 			};
@@ -7318,7 +7318,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAG_13";
 				presence=0.84706765;
 			};
@@ -7338,7 +7338,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAG_14";
 				presence=0.84706765;
 			};
@@ -7358,7 +7358,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAG_15";
 				presence=0.84706765;
 			};
@@ -7378,7 +7378,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAG_16";
 				presence=0.84706765;
 			};
@@ -7398,7 +7398,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAG_17";
 				presence=0.84706765;
 			};
@@ -7418,7 +7418,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAG_18";
 				presence=0.84706765;
 			};
@@ -7438,7 +7438,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAG_19";
 				presence=0.84706765;
 			};
@@ -7458,7 +7458,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAG_20";
 				presence=0.84706765;
 			};
@@ -7477,7 +7477,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAG_21";
 				presence=0.84706765;
 			};
@@ -7497,7 +7497,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAG_22";
 				presence=0.84706765;
 			};
@@ -7517,7 +7517,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAG_23";
 				presence=0.84706765;
 			};
@@ -7537,7 +7537,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAG_24";
 				presence=0.84706765;
 			};
@@ -7556,7 +7556,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this,1000,3000] execVM ""Core/clientFunctions/fn_vehicleRespawn.sqf"";";
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
 				name="SKODAG_25";
 				presence=0.84706765;
 			};
