@@ -82,7 +82,7 @@ _i = 0;
      _loot setPos (_x buildingPos _ranNum);
      _loot setPos (loot modelToWorld [0,0,1]);
 
-      if (_gunChance <= 70) then {
+      if (_gunChance > 0) then {
       _loot addWeaponCargoGlobal  [_selGun,1];
       _loot addMagazineCargoGlobal [_selMag,_maxweps];
      };
