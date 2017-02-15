@@ -2,7 +2,7 @@ private ["_veh"];
 _veh = cursorTarget;
 if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air")) then
 {
-		if ("ToolKit" in (items player)) then {
+		if ("ToolKit" in (items player) && (damage _curTarget < 1)) then {
 			disableUserInput true;
 			player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
 			titleText ["Repairing Vehicle (10s)", "PLAIN"];
