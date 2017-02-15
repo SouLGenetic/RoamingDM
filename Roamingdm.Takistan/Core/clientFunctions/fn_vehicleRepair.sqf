@@ -4,37 +4,37 @@ if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air")) the
 {
 		if ("ToolKit" in (items player) && (damage _veh < 1)) then {
 			disableUserInput true;
-			player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
+			player playMoveNow "Acts_carFixingWheel";
 			titleText ["Repairing Vehicle (10s)", "PLAIN"];
 			uiSleep 1;
-			player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
+			player playMoveNow "Acts_carFixingWheel";
 			titleText ["Repairing Vehicle (9s)", "PLAIN"];
 			uiSleep 1;
-			player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
+			player playMoveNow "Acts_carFixingWheel";
 			titleText ["Repairing Vehicle (8s)", "PLAIN"];
 			uiSleep 1;
-			player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
+			player playMoveNow "Acts_carFixingWheel";
 			titleText ["Repairing Vehicle (7s)", "PLAIN"];
 			uiSleep 1;
-			player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
+			player playMoveNow "Acts_carFixingWheel";
 			titleText ["Repairing Vehicle (6s)", "PLAIN"];
 			uiSleep 1;
-			player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
+			player playMoveNow "Acts_carFixingWheel";
 			titleText ["Repairing Vehicle (5s)", "PLAIN"];
 			uiSleep 1;
-			player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
+			player playMoveNow "Acts_carFixingWheel";
 			titleText ["Repairing Vehicle (4s)", "PLAIN"];
 			uiSleep 1;
-			player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
+			player playMoveNow "Acts_carFixingWheel";
 			titleText ["Repairing Vehicle (3s)", "PLAIN"];
 			uiSleep 1;
-			player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
+			player playMoveNow "Acts_carFixingWheel";
 			titleText ["Repairing Vehicle (2s)", "PLAIN"];
 			uiSleep 1;
-			player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
+			player playMoveNow "Acts_carFixingWheel";
 			titleText ["Repairing Vehicle (1s)", "PLAIN"];
 			uiSleep 1;
-			player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
+			player playMoveNow "Acts_carFixingWheel";
 			player playActionNow "stop";
 			disableUserInput false;
 
