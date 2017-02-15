@@ -8,7 +8,7 @@ private ["_gunList", "_magList","_i", "_c", "_rNum", "_houses"];
 
 _maxweps = floor(random 5) + 1;
 
-_lootrespawn = true;
+_lootrespawn = false;
 
 
 
@@ -51,7 +51,7 @@ _items = ["CUP_TKBasicAmmunitionBox_EP1"];
 
 _debug = true;
 
-_houses = nearestObjects [player,["House","Building"], 500];
+_houses = nearestObjects [[5215,6150,0],["House","Building"], 10000];
 
 _i = 0;
 
@@ -115,17 +115,17 @@ _i = 0;
 
  _c = 0;
 
-uisleep 0.123;
+uisleep 0.0012;
 
 } forEach _houses;
 
-sleep 2;
+uisleep 1;
 
 loot enableSimulationGlobal false;
 
 if (_lootrespawn) then {
 
-sleep 360;
+uisleep 10800;
 
 [] spawn rDM_fnc_Itemspawns;
 } else {
