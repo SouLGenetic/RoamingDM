@@ -4,7 +4,6 @@ diag_log "----------------------------Version 1.1-----------------------------";
 diag_log "-----------------------Written By Genetic---------------------------";
 diag_log "--------------------------------------------------------------------";
 diag_log "----------------------Disabling Player Fatigue----------------------";
-[] spawn rDM_fnc_Itemspawns;
 player enableFatigue false;
 diag_log "----------------------Player Fatigue Disabled-----------------------";
 

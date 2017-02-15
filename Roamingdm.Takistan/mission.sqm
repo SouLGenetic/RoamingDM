@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=84;
+		nextID=464;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8890.7754,758.81909,4316.5928};
-		dir[]={-0.5785315,-0.66325337,0.47478566};
-		up[]={-0.51270175,0.74839538,0.42076138};
-		aside[]={0.63439953,-1.3737008e-008,0.77302265};
+		pos[]={6322.2124,60.3629,11239.348};
+		dir[]={-0.065243088,-0.65104532,0.75623816};
+		up[]={-0.055960163,0.7590369,0.64863771};
+		aside[]={0.99630493,1.8218998e-008,0.085954845};
 	};
 };
 binarizationWanted=0;
@@ -33,13 +33,25 @@ addons[]=
 	"A3_Weapons_F_Items",
 	"CUP_Creatures_Military_CDF",
 	"CUP_Creatures_Military_BAF",
-	"A3_Ui_F"
+	"A3_Ui_F",
+	"CUP_WheeledVehicles_Skoda",
+	"CUP_WheeledVehicles_Datsun",
+	"CUP_WheeledVehicles_LR",
+	"CUP_WheeledVehicles_UAZ",
+	"CUP_AirVehicles_Mi8",
+	"CUP_WheeledVehicles_BTR40",
+	"CUP_WheeledVehicles_HMMWV",
+	"CUP_AirVehicles_UH60",
+	"CUP_AirVehicles_C130J",
+	"CUP_AirVehicles_AH6",
+	"CUP_AirVehicles_UH1H",
+	"CUP_WheeledVehicles_Ural"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=8;
+		items=20;
 		class Item0
 		{
 			className="CUP_Creatures_Military_USArmy";
@@ -84,6 +96,66 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
+		class Item8
+		{
+			className="CUP_WheeledVehicles_Skoda";
+			name="CUP_WheeledVehicles_Skoda";
+		};
+		class Item9
+		{
+			className="CUP_WheeledVehicles_Datsun";
+			name="CUP_WheeledVehicles_Datsun";
+		};
+		class Item10
+		{
+			className="CUP_WheeledVehicles_LR";
+			name="CUP_WheeledVehicles_LR";
+		};
+		class Item11
+		{
+			className="CUP_WheeledVehicles_UAZ";
+			name="CUP_WheeledVehicles_UAZ";
+		};
+		class Item12
+		{
+			className="CUP_AirVehicles_Mi8";
+			name="CUP_AirVehicles_Mi8";
+		};
+		class Item13
+		{
+			className="CUP_WheeledVehicles_BTR40";
+			name="CUP_WheeledVehicles_BTR40";
+		};
+		class Item14
+		{
+			className="CUP_WheeledVehicles_HMMWV";
+			name="CUP_WheeledVehicles_HMMWV";
+		};
+		class Item15
+		{
+			className="CUP_AirVehicles_UH60";
+			name="CUP_AirVehicles_UH60";
+		};
+		class Item16
+		{
+			className="CUP_AirVehicles_C130J";
+			name="CUP_AirVehicles_C130J";
+		};
+		class Item17
+		{
+			className="CUP_AirVehicles_AH6";
+			name="CUP_AirVehicles_AH6";
+		};
+		class Item18
+		{
+			className="CUP_AirVehicles_UH1H";
+			name="CUP_AirVehicles_UH1H";
+		};
+		class Item19
+		{
+			className="CUP_WheeledVehicles_Ural";
+			name="CUP_WheeledVehicles_Ural";
+		};
 	};
 };
 randomSeed=4632171;
@@ -112,7 +184,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=55;
+		items=270;
 		class Item0
 		{
 			dataType="Group";
@@ -1572,7 +1644,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7017.5908,44.414135,12438.613};
+						position[]={6322.6714,60.17849,11241.379};
 						angles[]={0,3.9386146,0};
 					};
 					side="West";
@@ -1633,7 +1705,6 @@ class Mission
 					};
 					id=29;
 					type="CUP_B_US_Soldier";
-					atlOffset=0.14608383;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1663,7 +1734,6 @@ class Mission
 			{
 			};
 			id=28;
-			atlOffset=0.14608383;
 		};
 		class Item15
 		{
@@ -3239,7 +3309,7 @@ class Mission
 		class Item53
 		{
 			dataType="Marker";
-			position[]={7021.6333,1.3022512e+014,12445.642};
+			position[]={6326.7139,1.3022512e+014,11248.407};
 			name="respawn_west_25";
 			type="Empty";
 			id=82;
@@ -3253,6 +3323,4246 @@ class Mission
 			type="Empty";
 			id=83;
 			atlOffset=1.3022512e+014;
+		};
+		class Item55
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={24.026564,336.05835,5498.4482};
+				angles[]={0.10363164,1.1852739,6.1590281};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAG";
+				presence=0.84706765;
+			};
+			id=85;
+			type="CUP_C_Skoda_Green_CIV";
+		};
+		class Item56
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1909.5947,306.11197,10801.256};
+				angles[]={0.24460195,0.11929768,6.2272429};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAB";
+				presence=0.85130006;
+			};
+			id=88;
+			type="CUP_C_Skoda_Blue_CIV";
+		};
+		class Item57
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={850.63141,284.65775,5705.8027};
+				angles[]={0.071878299,1.2563002,6.2543902};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAW";
+				presence=0.84706765;
+			};
+			id=94;
+			type="CUP_C_Skoda_White_CIV";
+		};
+		class Item58
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5884.7261,159.34514,6447.6592};
+				angles[]={0.28188807,0,0.0032018756};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="PICKUP";
+				presence=0.50423253;
+			};
+			id=103;
+			type="CUP_C_Datsun_4seat";
+			atlOffset=-0.046112061;
+		};
+		class Item59
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6818.5908,178.21964,7293.686};
+				angles[]={0.054346491,6.0185857,0.1973958};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="pickupARMED1";
+				presence=0.50000012;
+			};
+			id=152;
+			type="CUP_I_Datsun_PK_TK_Random";
+			atlOffset=-0.1282959;
+		};
+		class Item60
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={10191.99,549.31763,3716.0156};
+				angles[]={0.0032018756,0,6.2767816};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="pickupARMED2";
+				presence=0.50423253;
+			};
+			id=156;
+			type="CUP_I_Datsun_PK_TK";
+			atlOffset=-0.031982422;
+		};
+		class Item61
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2364.0947,436.77985,6146.5942};
+				angles[]={6.2703824,0,6.0765767};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="LANDROVERM2";
+				presence=0.50423253;
+			};
+			id=214;
+			type="CUP_O_LR_MG_TKA";
+			atlOffset=-0.023712158;
+		};
+		class Item62
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6821.3438,301.19809,6110.627};
+				angles[]={0.0080009829,0,0.17111304};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="LANDROVERSPG9";
+				presence=0.50423253;
+			};
+			id=215;
+			type="CUP_O_LR_SPG9_TKA";
+			atlOffset=-0.087402344;
+		};
+		class Item63
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2930.407,183.37958,5352.2603};
+				angles[]={0.051154058,0.85868675,6.2448058};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="LANDROVER";
+				presence=0.50423253;
+			};
+			id=216;
+			type="CUP_O_LR_Transport_TKA";
+		};
+		class Item64
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3555.1563,366.00952,1312.3638};
+				angles[]={6.2336254,3.0757804,6.2304358};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="UAZ";
+				presence=0.50423253;
+			};
+			id=217;
+			type="CUP_O_UAZ_Unarmed_TKA";
+		};
+		class Item65
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9376.0225,404.29752,4592.731};
+				angles[]={0.10837226,6.08495,6.2703872};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="UAZAGS30";
+				presence=0.50423253;
+			};
+			id=218;
+			type="CUP_O_UAZ_AGS30_TKA";
+			atlOffset=0.0070800781;
+		};
+		class Item66
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5654.1973,85.854759,11145.772};
+				angles[]={0,0,6.2816491};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,15,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="MI17";
+				presence=0.39841926;
+			};
+			id=222;
+			type="CUP_O_Mi17_TK";
+			atlOffset=-0.031929016;
+		};
+		class Item67
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1965.6201,299.27237,7754.3271};
+				angles[]={6.0704532,5.611589,6.0781112};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="BTR40ARMED";
+				presence=0.50000012;
+			};
+			id=225;
+			type="CUP_O_BTR40_MG_TKM";
+			atlOffset=-0.11120605;
+		};
+		class Item68
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5283.2378,564.53687,3550.7957};
+				angles[]={0.089360513,0,0.067096636};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="BTR40";
+				presence=0.4957675;
+			};
+			id=227;
+			type="CUP_O_BTR40_TKM";
+			atlOffset=-0.04284668;
+		};
+		class Item69
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5044.6597,303.63013,6908.1499};
+				angles[]={0,2.1854916,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="HMVM2";
+				presence=0.50000012;
+			};
+			id=229;
+			type="CUP_B_HMMWV_M2_GPK_USA";
+			atlOffset=-0.042663574;
+		};
+		class Item70
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4525.8022,178.16023,8544.293};
+				angles[]={0.043171391,0,0.0095994528};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="HMVGL";
+				presence=0.4957675;
+			};
+			id=230;
+			type="CUP_B_HMMWV_SOV_USA";
+			atlOffset=-0.027389526;
+		};
+		class Item71
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6018.7759,85.652214,11568.627};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,15,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="BLACKHAWK";
+				presence=0.39841926;
+			};
+			id=232;
+			type="CUP_B_UH60L_US";
+			atlOffset=-0.020011902;
+		};
+		class Item72
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8394.6133,301.68616,1987.1727};
+				angles[]={0,4.181798,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,15,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="C130";
+				presence=0.19949047;
+			};
+			id=224;
+			type="CUP_O_C130J_TKA";
+			atlOffset=-0.012908936;
+		};
+		class Item73
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1271.2483,261.04724,11300.555};
+				angles[]={6.2815661,0,6.2304316};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="LittleBird_1";
+				presence=0.19949047;
+			};
+			id=235;
+			type="CUP_B_MH6J_USA";
+			atlOffset=-0.04083252;
+		};
+		class Item74
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={931.96881,501.66415,7350.2783};
+				angles[]={6.2144899,0,6.1748133};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="LittleBird_2";
+				presence=0.19949047;
+			};
+			id=236;
+			type="CUP_B_MH6J_USA";
+			atlOffset=0.0096435547;
+		};
+		class Item75
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1154.5293,514.3714,4715.2808};
+				angles[]={6.2416081,0,6.1779799};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="LittleBird_3";
+				presence=0.19949047;
+			};
+			id=237;
+			type="CUP_B_MH6J_USA";
+			atlOffset=0.014282227;
+		};
+		class Item76
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1125.8278,302.47046,1732.8656};
+				angles[]={0.046362594,0,6.2816033};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="LittleBird_4";
+				presence=0.19949047;
+			};
+			id=238;
+			type="CUP_B_MH6J_USA";
+			atlOffset=-0.0016784668;
+		};
+		class Item77
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3114.9927,398.21875,1348.6846};
+				angles[]={6.2097197,0,0.0015822123};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="LittleBird_5";
+				presence=0.19949047;
+			};
+			id=239;
+			type="CUP_B_MH6J_USA";
+			atlOffset=-0.010314941;
+		};
+		class Item78
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3431.4507,607.2984,2493.6948};
+				angles[]={0.012788955,0,0.1288909};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="LittleBird_6";
+				presence=0.19949047;
+			};
+			id=240;
+			type="CUP_B_MH6J_USA";
+			atlOffset=0.0079345703;
+		};
+		class Item79
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2819.021,404.78894,4233.3315};
+				angles[]={0.0207968,0,0.0032018756};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="LittleBird_7";
+				presence=0.19949047;
+			};
+			id=241;
+			type="CUP_B_MH6J_USA";
+			atlOffset=0.0047607422;
+		};
+		class Item80
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2593.3213,477.21817,6548.8848};
+				angles[]={6.2304358,0,0.065506957};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="LittleBird_8";
+				presence=0.19949047;
+			};
+			id=242;
+			type="CUP_B_MH6J_USA";
+			atlOffset=0.0015258789;
+		};
+		class Item81
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2708.5427,224.08456,7979.4653};
+				angles[]={6.148016,0,6.2735796};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="LittleBird_9";
+				presence=0.19949047;
+			};
+			id=243;
+			type="CUP_B_MH6J_USA";
+			atlOffset=0.0035095215;
+		};
+		class Item82
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3803.2693,80.818481,10954.804};
+				angles[]={6.2655869,0,6.2208662};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="LittleBird_10";
+				presence=0.19949047;
+			};
+			id=244;
+			type="CUP_B_MH6J_USA";
+			atlOffset=-0.022659302;
+		};
+		class Item83
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5291.9189,393.4884,1523.1466};
+				angles[]={6.2623887,0,6.2703919};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="LittleBird_11";
+				presence=0.19949047;
+			};
+			id=245;
+			type="CUP_B_MH6J_USA";
+			atlOffset=-0.053283691;
+		};
+		class Item84
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4735.6914,331.41556,4336.1333};
+				angles[]={0.13202536,0,6.2304358};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="LittleBird_12";
+				presence=0.19949047;
+			};
+			id=246;
+			type="CUP_B_MH6J_USA";
+			atlOffset=0.00088500977;
+		};
+		class Item85
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4534.8916,414.4024,7643.6416};
+				angles[]={6.2816033,0,0.022392303};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="LittleBird_13";
+				presence=0.19949047;
+			};
+			id=247;
+			type="CUP_B_MH6J_USA";
+			atlOffset=-0.022033691;
+		};
+		class Item86
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5069.7754,120.93744,9495.8467};
+				angles[]={0.067099303,0,6.2527947};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="LittleBird_14";
+				presence=0.19949047;
+			};
+			id=248;
+			type="CUP_B_MH6J_USA";
+			atlOffset=0.007598877;
+		};
+		class Item87
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7287.623,394.43369,2892.363};
+				angles[]={0.014398213,0,6.2623887};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="LittleBird_15";
+				presence=0.19949047;
+			};
+			id=249;
+			type="CUP_B_MH6J_USA";
+			atlOffset=0.0094299316;
+		};
+		class Item88
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7760.5903,483.56024,5450.6538};
+				angles[]={0.073465936,0,6.2511988};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="LittleBird_16";
+				presence=0.19949047;
+			};
+			id=250;
+			type="CUP_B_MH6J_USA";
+			atlOffset=-0.025726318;
+		};
+		class Item89
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7895.3247,215.22292,8258.376};
+				angles[]={0.0016194459,0,0.036782328};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="LittleBird_17";
+				presence=0.19949047;
+			};
+			id=251;
+			type="CUP_B_MH6J_USA";
+			atlOffset=-0.019226074;
+		};
+		class Item90
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7970.061,231.30815,11349.348};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="LittleBird_18";
+				presence=0.19949047;
+			};
+			id=252;
+			type="CUP_B_MH6J_USA";
+			atlOffset=-0.028015137;
+		};
+		class Item91
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={10720.778,463.75546,2841.9622};
+				angles[]={6.189065,0,6.2623887};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="LittleBird_19";
+				presence=0.19949047;
+			};
+			id=253;
+			type="CUP_B_MH6J_USA";
+			atlOffset=-0.0096130371;
+		};
+		class Item92
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={10349.98,608.99261,5420.5186};
+				angles[]={0.076647028,0,6.2400184};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="LittleBird_20";
+				presence=0.19949047;
+			};
+			id=254;
+			type="CUP_B_MH6J_USA";
+			atlOffset=-0.0067749023;
+		};
+		class Item93
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={10581.346,514.13367,7925.1577};
+				angles[]={0.0095932409,0,6.2591968};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="LittleBird_21";
+				presence=0.19949047;
+			};
+			id=255;
+			type="CUP_B_MH6J_USA";
+			atlOffset=-0.01940918;
+		};
+		class Item94
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={10501.589,171.82297,10225.876};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="LittleBird_22";
+				presence=0.19949047;
+			};
+			id=256;
+			type="CUP_B_MH6J_USA";
+			atlOffset=-0.013198853;
+		};
+		class Item95
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11152.734,79.287224,12589.981};
+				angles[]={0.0032018756,0,6.2655902};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="LittleBird_23";
+				presence=0.19949047;
+			};
+			id=257;
+			type="CUP_B_MH6J_USA";
+			atlOffset=-0.033226013;
+		};
+		class Item96
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4077.7708,39.942657,10707.377};
+				angles[]={0.015998369,0,0.020793933};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="HUEY_1";
+				presence=0.20372298;
+			};
+			id=259;
+			type="CUP_O_UH1H_slick_TKA";
+			atlOffset=0.0012245178;
+		};
+		class Item97
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4420.2573,115.0264,9660.8115};
+				angles[]={0.0207968,0,6.2687874};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="HUEY_2";
+				presence=0.20372298;
+			};
+			id=260;
+			type="CUP_O_UH1H_slick_TKA";
+			atlOffset=-0.0087738037;
+		};
+		class Item98
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5917.4673,70.11245,10229.411};
+				angles[]={6.2400126,0,6.2320304};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="HUEY_3";
+				presence=0.20372298;
+			};
+			id=261;
+			type="CUP_O_UH1H_slick_TKA";
+			atlOffset=7.6293945e-006;
+		};
+		class Item99
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5854.4312,109.49347,8405.9033};
+				angles[]={0.033588443,0,0.097291566};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="HUEY_4";
+				presence=0.20372298;
+			};
+			id=262;
+			type="CUP_O_UH1H_slick_TKA";
+			atlOffset=0.016014099;
+		};
+		class Item100
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2361.8147,196.93584,4811.5977};
+				angles[]={0.073466748,0,0.030392511};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="HUEY_5";
+				presence=0.20372298;
+			};
+			id=263;
+			type="CUP_O_UH1H_slick_TKA";
+			atlOffset=-0.0081176758;
+		};
+		class Item101
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7892.5313,298.43411,1861.0811};
+				angles[]={6.2735858,0,6.2687831};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="HUEY_6";
+				presence=0.20372298;
+			};
+			id=264;
+			type="CUP_O_UH1H_slick_TKA";
+			atlOffset=-0.0011901855;
+		};
+		class Item102
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7968.1689,298.36084,1977.1277};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="HUEY_7";
+				presence=0.20372298;
+			};
+			id=265;
+			type="CUP_O_UH1H_slick_TKA";
+			atlOffset=-0.00018310547;
+		};
+		class Item103
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4895.0386,267.98044,6788.4238};
+				angles[]={6.2208595,1.4870205,0.068696164};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				presence=0.50423253;
+			};
+			id=269;
+			type="CUP_C_Ural_Open_Civ_02";
+			atlOffset=-0.0046691895;
+		};
+		class Item104
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6766.2349,122.43053,8813.8662};
+				angles[]={0.0095994528,0.39370611,6.2687874};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+			};
+			id=270;
+			type="CUP_C_Ural_Open_Civ_02";
+			atlOffset=-0.00063323975;
+		};
+		class Item105
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9723.5889,148.19188,10515.053};
+				angles[]={0.046365164,0.2001334,6.2799835};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+			};
+			id=271;
+			type="CUP_C_Ural_Open_Civ_02";
+			atlOffset=-0.012374878;
+		};
+		class Item106
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9016.7256,201.36531,6881.1621};
+				angles[]={0.075058997,5.7148418,6.2208662};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+			};
+			id=272;
+			type="CUP_C_Ural_Open_Civ_02";
+			atlOffset=0.0034942627;
+		};
+		class Item107
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8654.4756,460.28189,4023.0347};
+				angles[]={6.2416067,0.95630407,0.070284568};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+			};
+			id=273;
+			type="CUP_C_Ural_Open_Civ_02";
+			atlOffset=-9.1552734e-005;
+		};
+		class Item108
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4491.001,340.05032,749.30157};
+				angles[]={6.232029,5.3466287,6.160605};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+			};
+			id=274;
+			type="CUP_C_Ural_Open_Civ_02";
+			atlOffset=-0.002166748;
+		};
+		class Item109
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3816.2695,223.88055,4372.8872};
+				angles[]={6.2336264,4.5412555,0.065506957};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+			};
+			id=275;
+			type="CUP_C_Ural_Open_Civ_02";
+			atlOffset=-0.00053405762;
+		};
+		class Item110
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={257.44702,256.83453,2829.5815};
+				angles[]={6.2751918,1.5880854,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+			};
+			id=276;
+			type="CUP_C_Ural_Open_Civ_02";
+			atlOffset=-0.00015258789;
+		};
+		class Item111
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={748.48566,518.81281,7723.1299};
+				angles[]={6.2767911,0.48514906,6.2703872};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+			};
+			id=277;
+			type="CUP_C_Ural_Open_Civ_02";
+			atlOffset=-0.0026855469;
+		};
+		class Item112
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3295.4568,88.603165,9713.9258};
+				angles[]={0.019199125,5.517797,0.049559005};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+			};
+			id=278;
+			type="CUP_C_Ural_Open_Civ_02";
+			atlOffset=0.007598877;
+		};
+		class Item113
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1409.3578,244.77731,5814.8169};
+				angles[]={6.2192712,2.238776,6.2129035};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="URAL_1";
+				presence=0.4957675;
+			};
+			id=283;
+			type="CUP_O_Ural_Open_TKA";
+			atlOffset=-4.5776367e-005;
+		};
+		class Item114
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2511.2825,399.53241,764.505};
+				angles[]={6.2735858,1.225343,0.0207968};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="URAL_2";
+				presence=0.4957675;
+			};
+			id=284;
+			type="CUP_O_Ural_Open_TKA";
+			atlOffset=-6.1035156e-005;
+		};
+		class Item115
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4148.8726,574.01776,2586.3618};
+				angles[]={5.9532952,0,0.041578647};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="URAL_3";
+				presence=0.4957675;
+			};
+			id=285;
+			type="CUP_O_Ural_Open_TKA";
+			atlOffset=-0.00012207031;
+		};
+		class Item116
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6567.8018,288.0015,1225.6997};
+				angles[]={6.1448755,1.6917384,6.2655835};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="URAL_4";
+				presence=0.4957675;
+			};
+			id=286;
+			type="CUP_O_Ural_Open_TKA";
+			atlOffset=-0.002166748;
+		};
+		class Item117
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7565.4136,320.53772,2676.6003};
+				angles[]={6.211307,0.21714294,6.2655869};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="URAL_5";
+				presence=0.4957675;
+			};
+			id=287;
+			type="CUP_O_Ural_Open_TKA";
+			atlOffset=-0.00021362305;
+		};
+		class Item118
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9134.2383,316.08771,2224.8862};
+				angles[]={6.2687874,1.3173482,0.043176915};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="URAL_6";
+				presence=0.4957675;
+			};
+			id=288;
+			type="CUP_O_Ural_Open_TKA";
+			atlOffset=-3.0517578e-005;
+		};
+		class Item119
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7829.4004,470.12354,5601.4033};
+				angles[]={0.0079935296,4.835825,0.025594741};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="URAL_7";
+				presence=0.4957675;
+			};
+			id=289;
+			type="CUP_O_Ural_Open_TKA";
+			atlOffset=0.0033569336;
+		};
+		class Item120
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5926.3853,130.3605,7128.561};
+				angles[]={6.2816033,5.8339038,0.015998369};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="URAL_8";
+				presence=0.4957675;
+			};
+			id=290;
+			type="CUP_O_Ural_Open_TKA";
+			atlOffset=0.0043792725;
+		};
+		class Item121
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5365.8564,98.229843,10282.021};
+				angles[]={0.057536088,0.52484632,6.2751846};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="URAL_9";
+				presence=0.4957675;
+			};
+			id=291;
+			type="CUP_O_Ural_Open_TKA";
+			atlOffset=-0.0005645752;
+		};
+		class Item122
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3428.2571,93.609085,11092.775};
+				angles[]={0.062319059,1.4428045,6.2288389};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="URAL_10";
+				presence=0.4957675;
+			};
+			id=292;
+			type="CUP_O_Ural_Open_TKA";
+			atlOffset=-3.0517578e-005;
+		};
+		class Item123
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7153.3008,73.389038,10798.203};
+				angles[]={0.059130985,0,0.0015822123};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="URAL_11";
+				presence=0.4957675;
+			};
+			id=293;
+			type="CUP_O_Ural_Open_TKA";
+			atlOffset=-0.014404297;
+		};
+		class Item124
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11326.946,181.43103,10463.32};
+				angles[]={0.0032018756,5.4674959,6.2816033};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="URAL_12";
+				presence=0.4957675;
+			};
+			id=294;
+			type="CUP_O_Ural_Open_TKA";
+			atlOffset=-0.0012207031;
+		};
+		class Item125
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3334.9661,174.88278,8179.5283};
+				angles[]={6.2767911,1.0188489,0.0095994528};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="URAL_13";
+				presence=0.4957675;
+			};
+			id=295;
+			type="CUP_O_Ural_Open_TKA";
+		};
+		class Item126
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6663.8794,352.29422,4717.1001};
+				angles[]={0.028790962,0.6247223,6.2815661};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="URAL_14";
+				presence=0.4957675;
+			};
+			id=296;
+			type="CUP_O_Ural_Open_TKA";
+		};
+		class Item127
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9007.1875,278.87463,8371.5107};
+				angles[]={6.232029,0.77798808,0.052752923};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="URAL_15";
+				presence=0.4957675;
+			};
+			id=297;
+			type="CUP_O_Ural_Open_TKA";
+			atlOffset=-9.1552734e-005;
+		};
+		class Item128
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3492.5566,175.80556,5573.4922};
+				angles[]={0.067098416,1.2516458,6.249599};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="URAL_16";
+				presence=0.4957675;
+			};
+			id=298;
+			type="CUP_O_Ural_Open_TKA";
+			atlOffset=-3.0517578e-005;
+		};
+		class Item129
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2638.9385,198.99832,5123.4219};
+				angles[]={0.015998369,0,6.271987};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="HMVU_1";
+				presence=0.7031616;
+			};
+			id=300;
+			type="CUP_B_HMMWV_Unarmed_USA";
+		};
+		class Item130
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5826.5522,264.45593,5763.1948};
+				angles[]={0.078243315,6.212255,0.070284568};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="HMVU_2";
+				presence=0.7031616;
+			};
+			id=301;
+			type="CUP_B_HMMWV_Unarmed_USA";
+			atlOffset=-0.0019836426;
+		};
+		class Item131
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5151.7275,148.01288,6065.6089};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="HMVU_3";
+				presence=0.7031616;
+			};
+			id=302;
+			type="CUP_B_HMMWV_Unarmed_USA";
+		};
+		class Item132
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6085.5415,85.585457,11501.402};
+				angles[]={6.2784014,0,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="HMVU_4";
+				presence=0.7031616;
+			};
+			id=303;
+			type="CUP_B_HMMWV_Unarmed_USA";
+		};
+		class Item133
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8290.1191,181.30521,7779.2134};
+				angles[]={6.0934944,1.3363293,0.01919602};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="HMVU_5";
+				presence=0.7031616;
+			};
+			id=304;
+			type="CUP_B_HMMWV_Unarmed_USA";
+			atlOffset=-0.00068664551;
+		};
+		class Item134
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4686.3794,135.00783,9479.4736};
+				angles[]={6.2336264,2.7146776,0.0015822123};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="BTR40_1";
+				presence=0.4957675;
+			};
+			id=310;
+			type="CUP_O_BTR40_TKM";
+			atlOffset=-0.0012664795;
+		};
+		class Item135
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5211.4561,147.03403,6054.3218};
+				angles[]={6.2703872,4.3995876,6.2816033};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="BTR40_2";
+				presence=0.4957675;
+			};
+			id=311;
+			type="CUP_O_BTR40_TKM";
+			atlOffset=-7.6293945e-005;
+		};
+		class Item136
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6162.2705,68.566986,10971.852};
+				angles[]={0,0.31584638,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="BTR40_3";
+				presence=0.4957675;
+			};
+			id=312;
+			type="CUP_O_BTR40_TKM";
+		};
+		class Item137
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2000.054,344.77869,7216.7178};
+				angles[]={0.1711078,0,6.2799835};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="BTR40_4";
+				presence=0.4957675;
+			};
+			id=313;
+			type="CUP_O_BTR40_TKM";
+			atlOffset=-0.044006348;
+		};
+		class Item138
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={817.9292,552.67297,10478.824};
+				angles[]={6.260788,1.7563958,6.1464467};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="BTR40_5";
+				presence=0.4957675;
+			};
+			id=314;
+			type="CUP_O_BTR40_TKM";
+			atlOffset=-0.028747559;
+		};
+		class Item139
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11643.178,237.03925,8949.9375};
+				angles[]={0.027193764,0,6.2671871};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="BTR40_6";
+				presence=0.4957675;
+			};
+			id=315;
+			type="CUP_O_BTR40_TKM";
+			atlOffset=-0.0094146729;
+		};
+		class Item140
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11915.139,373.45465,2605.4182};
+				angles[]={6.2496004,5.9966674,6.2735925};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="BTR40_7";
+				presence=0.4957675;
+			};
+			id=316;
+			type="CUP_O_BTR40_TKM";
+			atlOffset=-6.1035156e-005;
+		};
+		class Item141
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8937.3193,409.7775,3241.8831};
+				angles[]={6.1748133,3.5165043,0.0080009829};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="pickupARMED1_1";
+				presence=0.50000012;
+			};
+			id=318;
+			type="CUP_I_Datsun_PK_TK_Random";
+		};
+		class Item142
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={716.16663,440.49133,4751.2739};
+				angles[]={6.249599,0.51785094,0.089360513};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="pickupARMED1_2";
+				presence=0.50000012;
+			};
+			id=319;
+			type="CUP_I_Datsun_PK_TK_Random";
+			atlOffset=0.030792236;
+		};
+		class Item143
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1863.5913,400.90897,9923.4736};
+				angles[]={6.2496004,0,0.11311401};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="pickupARMED1_3";
+				presence=0.50000012;
+			};
+			id=320;
+			type="CUP_I_Datsun_PK_TK_Random";
+			atlOffset=0.051940918;
+		};
+		class Item144
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={415.25687,305.27179,5576.0942};
+				angles[]={6.2543945,5.6850424,6.2639894};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="pickupARMED2_1";
+				presence=0.50423253;
+			};
+			id=323;
+			type="CUP_I_Datsun_PK_TK";
+			atlOffset=0.0023803711;
+		};
+		class Item145
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8665.6299,209.46667,9924.7607};
+				angles[]={0.17576753,0.71872842,6.2001762};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="pickupARMED2_2";
+				presence=0.50423253;
+			};
+			id=324;
+			type="CUP_I_Datsun_PK_TK";
+			atlOffset=-0.065307617;
+		};
+		class Item146
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3905.6113,424.35818,7157.106};
+				angles[]={0.46938893,0,6.1653357};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="pickupARMED2_3";
+				presence=0.50423253;
+			};
+			id=325;
+			type="CUP_I_Datsun_PK_TK";
+			atlOffset=-0.13980103;
+		};
+		class Item147
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1476.5117,234.94775,3637.0405};
+				angles[]={0.041575778,5.9335103,6.2336264};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="LANDROVERM2_1";
+				presence=0.50423253;
+			};
+			id=328;
+			type="CUP_O_LR_MG_TKA";
+			atlOffset=-0.0027770996;
+		};
+		class Item148
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8248.0234,298.32159,2135.4155};
+				angles[]={0,4.4026251,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="LANDROVERM2_2";
+				presence=0.50423253;
+			};
+			id=329;
+			type="CUP_O_LR_MG_TKA";
+			atlOffset=-3.0517578e-005;
+		};
+		class Item149
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5929.4688,85.324478,11902.873};
+				angles[]={0,2.7561486,6.2816415};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="LANDROVERM2_3";
+				presence=0.50423253;
+			};
+			id=330;
+			type="CUP_O_LR_MG_TKA";
+			atlOffset=7.6293945e-006;
+		};
+		class Item150
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6318.5596,589.30353,3540.9338};
+				angles[]={6.2368231,0,6.127655};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="LANDROVERM2_4";
+				presence=0.50423253;
+			};
+			id=331;
+			type="CUP_O_LR_MG_TKA";
+			atlOffset=-0.027587891;
+		};
+		class Item151
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3750.5232,136.80754,9074.2871};
+				angles[]={0.0207968,0,6.2815661};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="LANDROVERSPG9_1";
+				presence=0.50423253;
+			};
+			id=333;
+			type="CUP_O_LR_SPG9_TKA";
+			atlOffset=-0.0046691895;
+		};
+		class Item152
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4322.5713,162.64238,5692.8213};
+				angles[]={6.2208662,4.6562719,6.259192};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="UAZAGS30_1";
+				presence=0.50423253;
+			};
+			id=335;
+			type="CUP_O_UAZ_AGS30_TKA";
+			atlOffset=0.0096282959;
+		};
+		class Item153
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5335.2339,109.30379,9345.2803};
+				angles[]={0.1680008,3.2159493,0.038381387};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="UAZAGS30_2";
+				presence=0.50423253;
+			};
+			id=336;
+			type="CUP_O_UAZ_AGS30_TKA";
+			atlOffset=-0.032821655;
+		};
+		class Item154
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2251.7712,77.696838,12073.56};
+				angles[]={6.2464013,5.2099781,6.2575908};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="UAZAGS30_3";
+				presence=0.50423253;
+			};
+			id=337;
+			type="CUP_O_UAZ_AGS30_TKA";
+			atlOffset=0.0028152466;
+		};
+		class Item155
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={10362.314,256.55237,6402.1841};
+				angles[]={0.0080009829,1.6354496,0.017598685};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="UAZAGS30_4";
+				presence=0.50423253;
+			};
+			id=338;
+			type="CUP_O_UAZ_AGS30_TKA";
+			atlOffset=0.00079345703;
+		};
+		class Item156
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2178.3701,299.30353,2933.4282};
+				angles[]={0.092538148,0,0.2020064};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="BTR40ARMED_1";
+				presence=0.50000012;
+			};
+			id=340;
+			type="CUP_O_BTR40_MG_TKM";
+			atlOffset=0.028137207;
+		};
+		class Item157
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7402.0947,106.8715,9924.877};
+				angles[]={0.017598685,0,0.012798273};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="BTR40ARMED_2";
+				presence=0.50000012;
+			};
+			id=341;
+			type="CUP_O_BTR40_MG_TKM";
+			atlOffset=-0.0020370483;
+		};
+		class Item158
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2063.3735,219.53485,5516.0601};
+				angles[]={6.2751918,1.7888837,6.2767911};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="BTR40ARMED_3";
+				presence=0.50000012;
+			};
+			id=342;
+			type="CUP_O_BTR40_MG_TKM";
+			atlOffset=-0.0021972656;
+		};
+		class Item159
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8348.376,298.63281,1868.6763};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="HMVM2_1";
+				presence=0.50000012;
+			};
+			id=344;
+			type="CUP_B_HMMWV_M2_GPK_USA";
+		};
+		class Item160
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2042.9907,367.08942,320.31216};
+				angles[]={6.2751846,0,6.1858959};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="HMVM2_2";
+				presence=0.50000012;
+			};
+			id=345;
+			type="CUP_B_HMMWV_M2_GPK_USA";
+			atlOffset=-0.02243042;
+		};
+		class Item161
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5522.0757,85.653549,10953.77};
+				angles[]={0.004784164,4.5997028,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="HMVM2_3";
+				presence=0.50000012;
+			};
+			id=346;
+			type="CUP_B_HMMWV_M2_GPK_USA";
+			atlOffset=-0.0012054443;
+		};
+		class Item162
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5233.7505,218.82787,5106.7212};
+				angles[]={6.2767911,5.879076,6.2799835};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="HMVM2_4";
+				presence=0.50000012;
+			};
+			id=347;
+			type="CUP_B_HMMWV_M2_GPK_USA";
+			atlOffset=-1.5258789e-005;
+		};
+		class Item163
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7849.4287,298.15131,1749.1504};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="HMVGL_1";
+				presence=0.4957675;
+			};
+			id=349;
+			type="CUP_B_HMMWV_SOV_USA";
+			atlOffset=-3.0517578e-005;
+		};
+		class Item164
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5952.6504,85.177948,11330.364};
+				angles[]={0.0032018756,4.9092121,0.0015822123};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="HMVGL_2";
+				presence=0.4957675;
+			};
+			id=350;
+			type="CUP_B_HMMWV_SOV_USA";
+			atlOffset=-0.00045776367;
+		};
+		class Item165
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1957.4542,209.03619,4189.374};
+				angles[]={6.2575908,0,6.2416096};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="PICKUP_1";
+				presence=0.50423253;
+			};
+			id=352;
+			type="CUP_C_Datsun_4seat";
+			atlOffset=-0.0039978027;
+		};
+		class Item166
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5261.0151,314.77826,899.64465};
+				angles[]={0.01919602,0,0.036783949};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="PICKUP_2";
+				presence=0.50423253;
+			};
+			id=353;
+			type="CUP_C_Datsun_4seat";
+			atlOffset=0.0044250488;
+		};
+		class Item167
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7306.4365,288.76105,310.84076};
+				angles[]={0.10995501,0,0.14301609};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="PICKUP_3";
+				presence=0.50423253;
+			};
+			id=354;
+			type="CUP_C_Datsun_4seat";
+			atlOffset=0.0084228516;
+		};
+		class Item168
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={10222.404,357.44543,2437.5032};
+				angles[]={6.2288399,0,0.004796607};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="PICKUP_4";
+				presence=0.50423253;
+			};
+			id=355;
+			type="CUP_C_Datsun_4seat";
+			atlOffset=0.014801025;
+		};
+		class Item169
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8045.3853,371.95242,5089.8169};
+				angles[]={6.2575908,4.8058167,6.0131493};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="PICKUP_5";
+				presence=0.50423253;
+			};
+			id=356;
+			type="CUP_C_Datsun_4seat";
+			atlOffset=-3.0517578e-005;
+		};
+		class Item170
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3578.4556,204.67294,5092.4204};
+				angles[]={0.076648585,0,6.2288389};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="PICKUP_6";
+				presence=0.50423253;
+			};
+			id=357;
+			type="CUP_C_Datsun_4seat";
+		};
+		class Item171
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1433.4631,378.09119,6562.4883};
+				angles[]={6.1716533,0,6.2097139};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="PICKUP_7";
+				presence=0.50423253;
+			};
+			id=358;
+			type="CUP_C_Datsun_4seat";
+			atlOffset=0.0096435547;
+		};
+		class Item172
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3671.0342,47.790447,10399.12};
+				angles[]={6.2559919,0.91232264,6.2448039};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="PICKUP_8";
+				presence=0.50423253;
+			};
+			id=359;
+			type="CUP_C_Datsun_4seat";
+			atlOffset=-4.9591064e-005;
+		};
+		class Item173
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4600.1309,116.70164,10010.469};
+				angles[]={0.006394445,6.0909777,6.271987};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="PICKUP_9";
+				presence=0.50423253;
+			};
+			id=360;
+			type="CUP_C_Datsun_4seat";
+		};
+		class Item174
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7686.6948,134.89915,9294.251};
+				angles[]={6.2671871,4.880322,0.070283718};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="PICKUP_10";
+				presence=0.50423253;
+			};
+			id=361;
+			type="CUP_C_Datsun_4seat";
+			atlOffset=0.022674561;
+		};
+		class Item175
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9670.0176,111.28492,11620.64};
+				angles[]={0.0015822123,5.5805917,6.2816033};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="PICKUP_11";
+				presence=0.50423253;
+			};
+			id=362;
+			type="CUP_C_Datsun_4seat";
+			atlOffset=2.2888184e-005;
+		};
+		class Item176
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12368.028,113.67413,11045.824};
+				angles[]={6.2767816,5.7442889,0.027193764};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="PICKUP_12";
+				presence=0.50423253;
+			};
+			id=363;
+			type="CUP_C_Datsun_4seat";
+			atlOffset=-0.00022888184;
+		};
+		class Item177
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8992.2275,247.85048,5625.7949};
+				angles[]={0.089361183,0,0.027193764};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="PICKUP_13";
+				presence=0.50423253;
+			};
+			id=364;
+			type="CUP_C_Datsun_4seat";
+			atlOffset=-0.015594482;
+		};
+		class Item178
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6624.0913,351.9718,5649.0923};
+				angles[]={0.065506049,5.0289879,0.1146941};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="PICKUP_14";
+				presence=0.50423253;
+			};
+			id=365;
+			type="CUP_C_Datsun_4seat";
+			atlOffset=-0.00051879883;
+		};
+		class Item179
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3218.8999,320.51868,3580.5664};
+				angles[]={0.11942852,0.72269005,6.2033563};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="UAZ_1";
+				presence=0.50423253;
+			};
+			id=367;
+			type="CUP_O_UAZ_Unarmed_TKA";
+			atlOffset=-0.050140381;
+		};
+		class Item180
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4657.479,554.86816,2985.2212};
+				angles[]={0.067105524,0.75949872,6.2304325};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="UAZ_2";
+				presence=0.50423253;
+			};
+			id=368;
+			type="CUP_O_UAZ_Unarmed_TKA";
+			atlOffset=0.0014648438;
+		};
+		class Item181
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6554.0942,344.54938,2085.3328};
+				angles[]={6.1874776,5.3225875,6.1401696};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="UAZ_3";
+				presence=0.50423253;
+			};
+			id=369;
+			type="CUP_O_UAZ_Unarmed_TKA";
+			atlOffset=-0.012054443;
+		};
+		class Item182
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8010.6602,322.12183,2917.9146};
+				angles[]={6.1922359,0,6.2224593};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="UAZ_4";
+				presence=0.50423253;
+			};
+			id=370;
+			type="CUP_O_UAZ_Unarmed_TKA";
+			atlOffset=0.007598877;
+		};
+		class Item183
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7245.5747,134.53922,8630.083};
+				angles[]={6.259192,5.6771388,0.049559005};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="UAZ_5";
+				presence=0.50423253;
+			};
+			id=371;
+			type="CUP_O_UAZ_Unarmed_TKA";
+			atlOffset=0.018417358;
+		};
+		class Item184
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8666.7627,237.59824,11302.044};
+				angles[]={6.2288399,0,6.2400112};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="UAZ_6";
+				presence=0.50423253;
+			};
+			id=372;
+			type="CUP_O_UAZ_Unarmed_TKA";
+			atlOffset=0.002822876;
+		};
+		class Item185
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4659.5352,68.533707,11611.453};
+				angles[]={0.0095994528,3.2653744,6.2655869};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="UAZ_7";
+				presence=0.50423253;
+			};
+			id=373;
+			type="CUP_O_UAZ_Unarmed_TKA";
+			atlOffset=-0.0067977905;
+		};
+		class Item186
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={806.8114,655.25574,9442.6768};
+				angles[]={6.091948,0,6.2400084};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="UAZ_8";
+				presence=0.50423253;
+			};
+			id=374;
+			type="CUP_O_UAZ_Unarmed_TKA";
+			atlOffset=0.038635254;
+		};
+		class Item187
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5574.8877,86.178032,8831.8018};
+				angles[]={0.057536088,5.8726916,0.11942901};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="UAZ_9";
+				presence=0.50423253;
+			};
+			id=375;
+			type="CUP_O_UAZ_Unarmed_TKA";
+			atlOffset=0.0046081543;
+		};
+		class Item188
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5837.7915,103.38908,8146.937};
+				angles[]={6.2416096,5.893703,0.035185181};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="LANDROVER_1";
+				presence=0.50423253;
+			};
+			id=377;
+			type="CUP_O_LR_Transport_TKA";
+			atlOffset=0.019180298;
+		};
+		class Item189
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9278.3516,166.98949,10020.911};
+				angles[]={0.027191572,0.52294397,6.2496004};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="LANDROVER_2";
+				presence=0.50423253;
+			};
+			id=378;
+			type="CUP_O_LR_Transport_TKA";
+			atlOffset=-0.015197754;
+		};
+		class Item190
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11639.998,99.180389,11838.258};
+				angles[]={0.02399601,0.07183595,0.044770103};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="LANDROVER_3";
+				presence=0.50423253;
+			};
+			id=379;
+			type="CUP_O_LR_Transport_TKA";
+		};
+		class Item191
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11452.628,278.12869,8217.6904};
+				angles[]={0.0079935296,0.41946644,6.2816033};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="LANDROVER_4";
+				presence=0.50423253;
+			};
+			id=380;
+			type="CUP_O_LR_Transport_TKA";
+		};
+		class Item192
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6214.5049,317.76099,5981.4614};
+				angles[]={6.2208691,2.1140239,0.086182371};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="LANDROVER_5";
+				presence=0.50423253;
+			};
+			id=381;
+			type="CUP_O_LR_Transport_TKA";
+		};
+		class Item193
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5671.4512,79.953827,9311.3369};
+				angles[]={0,0,0.0032018756};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="LANDROVER_6";
+				presence=0.50423253;
+			};
+			id=382;
+			type="CUP_O_LR_Transport_TKA";
+			atlOffset=0.00079345703;
+		};
+		class Item194
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1127.4969,323.00296,5296.2739};
+				angles[]={0.12258036,0.89175242,6.144875};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAW_1";
+				presence=0.84706765;
+			};
+			id=386;
+			type="CUP_C_Skoda_White_CIV";
+		};
+		class Item195
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3063.5566,388.39008,855.63965};
+				angles[]={0.011198638,0,6.1684909};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAW_2";
+				presence=0.84706765;
+			};
+			id=387;
+			type="CUP_C_Skoda_White_CIV";
+			atlOffset=-0.031616211;
+		};
+		class Item196
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3610.7122,351.00885,707.18457};
+				angles[]={6.2033563,0,6.2816033};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAW_3";
+				presence=0.84706765;
+			};
+			id=388;
+			type="CUP_C_Skoda_White_CIV";
+			atlOffset=0.019622803;
+		};
+		class Item197
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4245.1812,373.66809,1257.1396};
+				angles[]={0.11153252,5.5772796,0.017598685};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAW_4";
+				presence=0.84706765;
+			};
+			id=389;
+			type="CUP_C_Skoda_White_CIV";
+			atlOffset=-0.023620605;
+		};
+		class Item198
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6087.603,294.61969,1169.7228};
+				angles[]={6.1779742,0,6.2703872};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAW_5";
+				presence=0.84706765;
+			};
+			id=390;
+			type="CUP_C_Skoda_White_CIV";
+			atlOffset=0.023223877;
+		};
+		class Item199
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7271.7905,288.54657,1133.0764};
+				angles[]={6.2496004,0.057557203,6.2767816};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAW_6";
+				presence=0.84706765;
+			};
+			id=391;
+			type="CUP_C_Skoda_White_CIV";
+			atlOffset=0.0068054199;
+		};
+		class Item200
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7892.1924,387.20914,3702.4268};
+				angles[]={6.1748133,0.43394998,0.052749533};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAW_7";
+				presence=0.84706765;
+			};
+			id=392;
+			type="CUP_C_Skoda_White_CIV";
+		};
+		class Item201
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7177.79,332.77814,4923.6099};
+				angles[]={0.035186876,4.9011993,0.011203959};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAW_8";
+				presence=0.84706765;
+			};
+			id=393;
+			type="CUP_C_Skoda_White_CIV";
+		};
+		class Item202
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9155.8906,216.99124,6322.9971};
+				angles[]={0.059129976,0,0.022394964};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAW_9";
+				presence=0.84706765;
+			};
+			id=394;
+			type="CUP_C_Skoda_White_CIV";
+			atlOffset=-0.009185791;
+		};
+		class Item203
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9587.5283,230.27025,6537.7417};
+				angles[]={0.071877465,4.8521075,6.2639866};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAW_10";
+				presence=0.84706765;
+			};
+			id=395;
+			type="CUP_C_Skoda_White_CIV";
+			atlOffset=-0.022827148;
+		};
+		class Item204
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8443.3662,187.50581,7553.0547};
+				angles[]={0.047963165,5.3279757,0.039977662};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAW_11";
+				presence=0.84706765;
+			};
+			id=396;
+			type="CUP_C_Skoda_White_CIV";
+			atlOffset=-0.0019989014;
+		};
+		class Item205
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6857.6807,305.88022,5993.4419};
+				angles[]={0.03358667,5.5708818,0.075058199};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAW_12";
+				presence=0.84706765;
+			};
+			id=397;
+			type="CUP_C_Skoda_White_CIV";
+			atlOffset=0.010437012;
+		};
+		class Item206
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6751.8394,265.76245,6566.8779};
+				angles[]={0.10678906,6.2341537,6.2800021};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAW_13";
+				presence=0.84706765;
+			};
+			id=398;
+			type="CUP_C_Skoda_White_CIV";
+			atlOffset=-0.027648926;
+		};
+		class Item207
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={907.92651,234.25467,3096.1802};
+				angles[]={0.022394964,1.0008235,6.278389};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAW_14";
+				presence=0.84706765;
+			};
+			id=399;
+			type="CUP_C_Skoda_White_CIV";
+		};
+		class Item208
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5392.5601,467.33948,3818.4739};
+				angles[]={0.31694543,0.42152005,6.1669106};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAW_15";
+				presence=0.84706765;
+			};
+			id=400;
+			type="CUP_C_Skoda_White_CIV";
+			atlOffset=-0.11117554;
+		};
+		class Item209
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3548.646,261.83231,4019.6372};
+				angles[]={0.18351254,5.9570923,0.035185181};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAW_16";
+				presence=0.84706765;
+			};
+			id=401;
+			type="CUP_C_Skoda_White_CIV";
+			atlOffset=-0.037658691;
+		};
+		class Item210
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1452.0446,286.59583,6123.3052};
+				angles[]={6.0981297,0,6.2447996};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAW_17";
+				presence=0.84706765;
+			};
+			id=402;
+			type="CUP_C_Skoda_White_CIV";
+		};
+		class Item211
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2453.8975,229.17113,7783.9678};
+				angles[]={0.065506957,1.2994378,6.2065368};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAW_18";
+				presence=0.84706765;
+			};
+			id=403;
+			type="CUP_C_Skoda_White_CIV";
+			atlOffset=-0.035583496;
+		};
+		class Item212
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4109.8145,122.49229,9395.8701};
+				angles[]={6.271987,1.0958167,6.2272439};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAW_19";
+				presence=0.84706765;
+			};
+			id=404;
+			type="CUP_C_Skoda_White_CIV";
+			atlOffset=-0.011192322;
+		};
+		class Item213
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4892.834,93.609108,10950.548};
+				angles[]={6.2767911,5.6014299,0.0032018756};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAW_20";
+				presence=0.84706765;
+			};
+			id=405;
+			type="CUP_C_Skoda_White_CIV";
+			atlOffset=0.0014801025;
+		};
+		class Item214
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5876.6113,70.887016,10302.369};
+				angles[]={0.09253493,0.29184505,6.2097178};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAW_21";
+				presence=0.84706765;
+			};
+			id=406;
+			type="CUP_C_Skoda_White_CIV";
+			atlOffset=-0.041610718;
+		};
+		class Item215
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7441.8145,98.843765,10319.906};
+				angles[]={0.052750662,5.791256,6.2719922};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAW_22";
+				presence=0.84706765;
+			};
+			id=407;
+			type="CUP_C_Skoda_White_CIV";
+			atlOffset=-0.015960693;
+		};
+		class Item216
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8236.3877,179.93459,8789.7461};
+				angles[]={0.030392511,5.7242656,0.044770103};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAW_23";
+				presence=0.84706765;
+			};
+			id=408;
+			type="CUP_C_Skoda_White_CIV";
+			atlOffset=0.0036010742;
+		};
+		class Item217
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5966.1636,120.47404,7507.2847};
+				angles[]={0.012798273,0.03229063,0.027193764};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAW_24";
+				presence=0.84706765;
+			};
+			id=409;
+			type="CUP_C_Skoda_White_CIV";
+		};
+		class Item218
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9222.1787,193.39519,9361.9961};
+				angles[]={0.044770103,5.8459587,0.0095994528};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAW_25";
+				presence=0.84706765;
+			};
+			id=410;
+			type="CUP_C_Skoda_White_CIV";
+			atlOffset=-0.0088195801;
+		};
+		class Item219
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12411.498,162.56421,10244.729};
+				angles[]={0.083009377,5.9555736,0.062319059};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAW_26";
+				presence=0.84706765;
+			};
+			id=411;
+			type="CUP_C_Skoda_White_CIV";
+			atlOffset=-0.0066375732;
+		};
+		class Item220
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1014.9542,356.33542,4165.1621};
+				angles[]={6.1969981,5.5935302,6.2160897};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAB_1";
+				presence=0.85130006;
+			};
+			id=413;
+			type="CUP_C_Skoda_Blue_CIV";
+			atlOffset=0.0047912598;
+		};
+		class Item221
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2319.7537,200.33827,4667.8818};
+				angles[]={0.030388586,0.37771371,0.070284568};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAB_2";
+				presence=0.85130006;
+			};
+			id=414;
+			type="CUP_C_Skoda_Blue_CIV";
+			atlOffset=0.0099945068;
+		};
+		class Item222
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1695.7791,391.38107,7155.0249};
+				angles[]={0.23100168,0.66174066,6.0491552};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAB_3";
+				presence=0.85130006;
+			};
+			id=415;
+			type="CUP_C_Skoda_Blue_CIV";
+			atlOffset=-0.11831665;
+		};
+		class Item223
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3679.9817,146.79796,8792.0254};
+				angles[]={0.057536088,0.23340376,6.2416096};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAB_4";
+				presence=0.85130006;
+			};
+			id=416;
+			type="CUP_C_Skoda_Blue_CIV";
+			atlOffset=-0.024780273;
+		};
+		class Item224
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={50.626392,463.94629,7098.666};
+				angles[]={6.2017694,0.40314743,6.2751846};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAB_5";
+				presence=0.85130006;
+			};
+			id=417;
+			type="CUP_C_Skoda_Blue_CIV";
+			atlOffset=0.018341064;
+		};
+		class Item225
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4860.269,97.604858,9939.6768};
+				angles[]={6.2575908,1.3593189,6.2320304};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAB_6";
+				presence=0.85130006;
+			};
+			id=418;
+			type="CUP_C_Skoda_Blue_CIV";
+			atlOffset=-0.0044250488;
+		};
+		class Item226
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4344.2368,156.98637,8988.8809};
+				angles[]={0.055941612,0.55599457,6.2671871};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAB_7";
+				presence=0.85130006;
+			};
+			id=419;
+			type="CUP_C_Skoda_Blue_CIV";
+			atlOffset=-0.017974854;
+		};
+		class Item227
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5564.2954,75.817558,9718.5986};
+				angles[]={0.0032018756,0.25296196,0.011198638};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAB_8";
+				presence=0.85130006;
+			};
+			id=420;
+			type="CUP_C_Skoda_Blue_CIV";
+		};
+		class Item228
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4209.3013,46.66436,10673.406};
+				angles[]={0.059129976,5.7567677,0.0015822123};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAB_9";
+				presence=0.85130006;
+			};
+			id=421;
+			type="CUP_C_Skoda_Blue_CIV";
+			atlOffset=-0.014373779;
+		};
+		class Item229
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4641.1914,14.134846,12581.124};
+				angles[]={0.004796607,5.9536057,0.0080009829};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAB_10";
+				presence=0.85130006;
+			};
+			id=422;
+			type="CUP_C_Skoda_Blue_CIV";
+			atlOffset=-0.0023736954;
+		};
+		class Item230
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5551.2837,84.467026,11396.535};
+				angles[]={0,0.61396778,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAB_11";
+				presence=0.85130006;
+			};
+			id=423;
+			type="CUP_C_Skoda_Blue_CIV";
+		};
+		class Item231
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6704.9897,50.160961,11599.744};
+				angles[]={0.027191572,0.71744639,6.2799835};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAB_12";
+				presence=0.85130006;
+			};
+			id=424;
+			type="CUP_C_Skoda_Blue_CIV";
+			atlOffset=-0.0076065063;
+		};
+		class Item232
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={10498.259,138.89174,11104.779};
+				angles[]={0.014398213,5.2823086,0.044770103};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAB_13";
+				presence=0.85130006;
+			};
+			id=425;
+			type="CUP_C_Skoda_Blue_CIV";
+		};
+		class Item233
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7567.4424,147.89929,8163.5249};
+				angles[]={0.03838294,5.4950943,0.0207968};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAB_14";
+				presence=0.85130006;
+			};
+			id=426;
+			type="CUP_C_Skoda_Blue_CIV";
+			atlOffset=-0.0025482178;
+		};
+		class Item234
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8719.1201,298.2428,4740.6411};
+				angles[]={0.11311401,0.26875776,6.2527947};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAB_15";
+				presence=0.85130006;
+			};
+			id=427;
+			type="CUP_C_Skoda_Blue_CIV";
+			atlOffset=-0.035980225;
+		};
+		class Item235
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9533.5996,394.13419,2873.6514};
+				angles[]={6.2288389,0.37775376,0.098875925};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAB_16";
+				presence=0.85130006;
+			};
+			id=428;
+			type="CUP_C_Skoda_Blue_CIV";
+			atlOffset=0.038360596;
+		};
+		class Item236
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8485.9092,302.52899,2377.103};
+				angles[]={0.0015822123,5.22153,0.03359022};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAB_17";
+				presence=0.85130006;
+			};
+			id=429;
+			type="CUP_C_Skoda_Blue_CIV";
+			atlOffset=0.0079956055;
+		};
+		class Item237
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={10785.681,395.87186,2422.6992};
+				angles[]={6.2176785,1.2627378,0.13045168};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAB_18";
+				presence=0.85130006;
+			};
+			id=430;
+			type="CUP_C_Skoda_Blue_CIV";
+			atlOffset=0.049224854;
+		};
+		class Item238
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8734.8936,348.43396,1656.1099};
+				angles[]={0.02718938,5.318264,0.05115639};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAB_19";
+				presence=0.85130006;
+			};
+			id=431;
+			type="CUP_C_Skoda_Blue_CIV";
+			atlOffset=0.0042114258;
+		};
+		class Item239
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6963.4097,293.59305,1542.5457};
+				angles[]={6.2368178,5.9080291,6.2639894};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAB_20";
+				presence=0.85130006;
+			};
+			id=432;
+			type="CUP_C_Skoda_Blue_CIV";
+			atlOffset=0.0075683594;
+		};
+		class Item240
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4776.7393,317.9548,759.22241};
+				angles[]={0,1.0961175,6.2528009};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAB_21";
+				presence=0.85130006;
+			};
+			id=433;
+			type="CUP_C_Skoda_Blue_CIV";
+		};
+		class Item241
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4140.4741,390.63052,1788.3326};
+				angles[]={6.2288399,0.31363127,0.079829417};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAB_22";
+				presence=0.85130006;
+			};
+			id=434;
+			type="CUP_C_Skoda_Blue_CIV";
+			atlOffset=0.033630371;
+		};
+		class Item242
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3879.4663,403.13528,3380.8933};
+				angles[]={0.32126856,5.9272094,0.090950049};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAB_23";
+				presence=0.85130006;
+			};
+			id=435;
+			type="CUP_C_Skoda_Blue_CIV";
+			atlOffset=-0.060333252;
+		};
+		class Item243
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5340.3252,253.70238,4579.2119};
+				angles[]={0.13674153,6.0362468,6.2687874};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAB_24";
+				presence=0.85130006;
+			};
+			id=436;
+			type="CUP_C_Skoda_Blue_CIV";
+			atlOffset=-0.037963867;
+		};
+		class Item244
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2650.3899,206.32686,10635.402};
+				angles[]={6.0012951,5.7979608,6.1276526};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAB_25";
+				presence=0.85130006;
+			};
+			id=437;
+			type="CUP_C_Skoda_Blue_CIV";
+			atlOffset=0.033050537;
+		};
+		class Item245
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1292.9216,220.52155,3411.2876};
+				angles[]={0,0.63910753,0.0095932409};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAG_1";
+				presence=0.84706765;
+			};
+			id=439;
+			type="CUP_C_Skoda_Green_CIV";
+			atlOffset=0.0024108887;
+		};
+		class Item246
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1597.5302,233.27309,5709.9473};
+				angles[]={6.2400155,5.2433081,6.2767911};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAG_2";
+				presence=0.84706765;
+			};
+			id=440;
+			type="CUP_C_Skoda_Green_CIV";
+			atlOffset=0.009185791;
+		};
+		class Item247
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2670.7498,217.03253,7830.3145};
+				angles[]={6.2559919,1.3420696,6.1700721};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAG_3";
+				presence=0.84706765;
+			};
+			id=441;
+			type="CUP_C_Skoda_Green_CIV";
+			atlOffset=-0.021606445;
+		};
+		class Item248
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1324.011,472.85788,10278.273};
+				angles[]={0.065502405,1.1852739,6.1954131};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAG_4";
+				presence=0.84706765;
+			};
+			id=442;
+			type="CUP_C_Skoda_Green_CIV";
+		};
+		class Item249
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1524.212,239.87172,11255.043};
+				angles[]={0.18505792,0.35152417,6.1985884};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAG_5";
+				presence=0.84706765;
+			};
+			id=443;
+			type="CUP_C_Skoda_Green_CIV";
+			atlOffset=-0.067901611;
+		};
+		class Item250
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1815.8358,147.28737,11949.785};
+				angles[]={0.001544081,0.84499681,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAG_6";
+				presence=0.84706765;
+			};
+			id=444;
+			type="CUP_C_Skoda_Green_CIV";
+		};
+		class Item251
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4164.0864,78.886269,10133.725};
+				angles[]={0.038381387,5.2944303,0.070283718};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAG_7";
+				presence=0.84706765;
+			};
+			id=445;
+			type="CUP_C_Skoda_Green_CIV";
+			atlOffset=0.0080108643;
+		};
+		class Item252
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3506.1851,163.25952,8360.0576};
+				angles[]={0.025592413,0.9053036,0.0080009829};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAG_8";
+				presence=0.84706765;
+			};
+			id=446;
+			type="CUP_C_Skoda_Green_CIV";
+		};
+		class Item253
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3605.7251,208.105,4920.8633};
+				angles[]={0.046366453,6.1705389,6.201767};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAG_9";
+				presence=0.84706765;
+			};
+			id=447;
+			type="CUP_C_Skoda_Green_CIV";
+		};
+		class Item254
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4924.3442,155.11537,6031.3359};
+				angles[]={0.028793031,0.4970763,0.006394445};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAG_10";
+				presence=0.84706765;
+			};
+			id=448;
+			type="CUP_C_Skoda_Green_CIV";
+			atlOffset=-0.0056152344;
+		};
+		class Item255
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5090.228,179.59724,6376.7363};
+				angles[]={6.1811414,5.9570427,6.232029};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAG_11";
+				presence=0.84706765;
+			};
+			id=449;
+			type="CUP_C_Skoda_Green_CIV";
+			atlOffset=0.012817383;
+		};
+		class Item256
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5416.0811,141.34756,6303.562};
+				angles[]={6.2703872,1.1083053,6.278389};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAG_12";
+				presence=0.84706765;
+			};
+			id=450;
+			type="CUP_C_Skoda_Green_CIV";
+			atlOffset=0.0019989014;
+		};
+		class Item257
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5374.3442,317.26419,4254.0371};
+				angles[]={0.31839073,6.2801437,6.271987};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAG_13";
+				presence=0.84706765;
+			};
+			id=451;
+			type="CUP_C_Skoda_Green_CIV";
+			atlOffset=-0.085144043;
+		};
+		class Item258
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7006.0952,284.05997,1055.136};
+				angles[]={6.2735858,1.8401921,0.027193764};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAG_14";
+				presence=0.84706765;
+			};
+			id=452;
+			type="CUP_C_Skoda_Green_CIV";
+			atlOffset=0.0072631836;
+		};
+		class Item259
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7953.1128,303.05429,2458.1221};
+				angles[]={6.2416124,0.00024752473,6.2735858};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAG_15";
+				presence=0.84706765;
+			};
+			id=453;
+			type="CUP_C_Skoda_Green_CIV";
+			atlOffset=0.0079650879;
+		};
+		class Item260
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6244.292,135.65334,7331.3682};
+				angles[]={6.2001762,1.3658115,0.060726274};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAG_16";
+				presence=0.84706765;
+			};
+			id=454;
+			type="CUP_C_Skoda_Green_CIV";
+			atlOffset=0.035949707;
+		};
+		class Item261
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4886.9731,101.58229,9805.5879};
+				angles[]={6.1292138,1.1852739,6.2432079};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAG_17";
+				presence=0.84706765;
+			};
+			id=455;
+			type="CUP_C_Skoda_Green_CIV";
+			atlOffset=0.028709412;
+		};
+		class Item262
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4705.7314,152.71124,9200.3672};
+				angles[]={6.271987,1.1852739,0.0015822123};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAG_18";
+				presence=0.84706765;
+			};
+			id=456;
+			type="CUP_C_Skoda_Green_CIV";
+			atlOffset=0.00085449219;
+		};
+		class Item263
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4499.2842,134.27592,9403.2197};
+				angles[]={0.0032018756,1.1852739,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAG_19";
+				presence=0.84706765;
+			};
+			id=457;
+			type="CUP_C_Skoda_Green_CIV";
+			atlOffset=-0.00080871582;
+		};
+		class Item264
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9186.4775,72.266739,12676.919};
+				angles[]={0.017595299,5.8670621,6.2799835};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAG_20";
+				presence=0.84706765;
+			};
+			id=458;
+			type="CUP_C_Skoda_Green_CIV";
+		};
+		class Item265
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11287.693,86.300629,12381.699};
+				angles[]={6.2432065,5.412293,6.2192721};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAG_21";
+				presence=0.84706765;
+			};
+			id=459;
+			type="CUP_C_Skoda_Green_CIV";
+			atlOffset=-0.0060348511;
+		};
+		class Item266
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12749.123,125.11167,10975.629};
+				angles[]={6.2751918,5.2149467,0.0032018756};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAG_22";
+				presence=0.84706765;
+			};
+			id=460;
+			type="CUP_C_Skoda_Green_CIV";
+			atlOffset=0.0023727417;
+		};
+		class Item267
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9284.2227,229.61139,8854.2041};
+				angles[]={0.12415794,0.050777242,6.2735858};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAG_23";
+				presence=0.84706765;
+			};
+			id=461;
+			type="CUP_C_Skoda_Green_CIV";
+			atlOffset=-0.033630371;
+		};
+		class Item268
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11294.696,407.02835,2442.5264};
+				angles[]={0.020793933,1.3171041,6.1370378};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAG_24";
+				presence=0.84706765;
+			};
+			id=462;
+			type="CUP_C_Skoda_Green_CIV";
+		};
+		class Item269
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9428.1797,332.07364,2397.8972};
+				angles[]={0.11784978,5.2835269,0.087776951};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="veh = [this,1000,3000] execVM ""Core\clientFunctions\fn_vehicleRespawn.sqf"";";
+				name="SKODAG_25";
+				presence=0.84706765;
+			};
+			id=463;
+			type="CUP_C_Skoda_Green_CIV";
+			atlOffset=-0.0075683594;
 		};
 	};
 };
