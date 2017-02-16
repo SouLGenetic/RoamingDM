@@ -115,7 +115,7 @@ _i = 0;
 
  _c = 0;
 
-uisleep 0.9;
+uisleep 0.1;
 
 } forEach _houses;
 
