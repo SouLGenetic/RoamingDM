@@ -51,7 +51,7 @@ _items = ["CUP_TKBasicAmmunitionBox_EP1"];
 
 _debug = true;
 
-_houses = nearestObjects [[5215,6150,0],["House","Building"], 6500];
+_houses = nearestObjects [[5215,6150,0],["House","Building"], 4500];
 
 _i = 0;
 
