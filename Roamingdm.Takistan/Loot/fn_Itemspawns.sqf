@@ -51,7 +51,7 @@ _items = ["CUP_TKBasicAmmunitionBox_EP1"];
 
 _debug = true;
 
-_houses = nearestObjects [[5215,6150,0],["House","Building"], 3000];
+_houses = nearestObjects [[5215,6150,0],["House","Building"], 6500];
 
 _i = 0;
 
@@ -115,7 +115,7 @@ _i = 0;
 
  _c = 0;
 
-uisleep 0.3;
+uisleep 0.9;
 
 } forEach _houses;
 
