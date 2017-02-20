@@ -10,6 +10,7 @@ class RoamingDM_core {
 	class Core {
 		file = "Core\clientFunctions";
 		class keyHandler {};
+		class playerGear {};
 		class vehicleRepair {};
 	};
 };
