@@ -9,3 +9,5 @@ while {true} do
 waitUntil{uniform player isEqualTo "rDM_t3Speed"};
 while {true} do 
 {player setAnimSpeedCoef 1.5};
+
+waitUntil {uniform player != (uniform player)};
