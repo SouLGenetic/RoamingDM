@@ -12,5 +12,6 @@ class RoamingDM_core {
 		class keyHandler {};
 		class playerGear {};
 		class vehicleRepair {};
+		class Checks {};
 	};
 };
