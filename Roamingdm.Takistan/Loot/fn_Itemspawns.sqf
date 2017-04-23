@@ -13,7 +13,7 @@ _lootrespawn = false;
 
 
 /*
-Array Settup
+Array Setup
 */
 _gunList = M_CONFIG(getArray,"LootTables","gunList","gun_list");
 _rareguns = M_CONFIG(getArray,"LootTables","rareguns","rare_guns");
