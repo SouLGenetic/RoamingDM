@@ -15,16 +15,16 @@ _lootrespawn = false;
 /*
 Array Setup
 */
-_gunList = M_CONFIG(getArray,"LootTables","gunList","gun_list");
-_rareguns = M_CONFIG(getArray,"LootTables","rareguns","rare_guns");
-_easyguns = M_CONFIG(getArray,"LootTables","easyguns","easy_guns");
-_itemlist = M_CONFIG(getArray,"LootTables","itemlist","item_list");
-_rareitems = M_CONFIG(getArray,"LootTables","rareItems","rare_items");
-_easyitems = M_CONFIG(getArray,"LootTables","easyitems","easy_items");
-_attachment = M_CONFIG(getArray,"LootTables","attachment","attach_ment");;
-_rareatts = M_CONFIG(getArray,"LootTables","rareatts","rare_atts");;
-_easyatts = M_CONFIG(getArray,"LootTables","easyatts","easy_atts");
-_bags = M_CONFIG(getArray,"LootTables","bags","bag_s");
+_gunList = LT_gunlist;
+_rareguns = LT_rareguns;
+_easyguns = LT_easyguns;
+_itemlist = LT_itemlist;
+_rareitems = LT_rareitems;
+_easyitems = LT_easyitems;
+_attachment = LT_attachment;
+_rareatts = LT_rareatts;
+_easyatts = LT_easyatts;
+_bags = LT_bags;
 
 
 _items = ["CUP_TKBasicAmmunitionBox_EP1"];
