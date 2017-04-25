@@ -9,7 +9,8 @@ diag_log "Display 46 Found";
 createDialog "infoDialog";
 
 //repairing
-player addAction ["<t color='#ffe800'>Repair Vehicle</t>",{[]spawn rDM_fnc_vehicleRepair}];
+player addAction ["<t color='#ffe800'>Repair Vehicle</t>",rDM_fnc_vehicleRepair,"",0,false,false,"",'!isNull cursorObject && cursorTarget isKindOf "landvehicle"'];
+
 
 //hide packs
 waitUntil {uniform player isEqualTo "CUP_U_B_BAF_DDPM_Ghillie"};
