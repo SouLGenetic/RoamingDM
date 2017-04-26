@@ -36,12 +36,14 @@ if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air")) the
 			uiSleep 1;
 			player playMoveNow "Acts_carFixingWheel";
 			player playActionNow "stop";
+			titleText [" ", "PLAIN"];
 			disableUserInput false;
 
 			player removeItem "ToolKit";
 			_veh setDamage 0;
 	} else {
-	hint "You need a toolkit to repair";
+	hint "You need a toolkit to repair,
+	Or this vehicle is beyond repair";
 	};
 } else {
 	hint "This isn't a Vehicle...";
