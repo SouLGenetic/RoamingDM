@@ -176,4 +176,11 @@ class bags {
 "CUP_B_USPack_Coyote"
 		};
 	};
+class Uniforms {
+	uniforms[] = {
+"rDM_t1Speed",
+"rDM_t2Speed",
+"rDM_t3Speed"
+		};
+	};
 };
