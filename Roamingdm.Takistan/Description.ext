@@ -1,5 +1,5 @@
 author = "Genetic and SpudcakeZ";
-onLoadName = "RoamingDM";
+onLoadName = "RoamingDM [v1.0.0113]";
 gameType = DM;
 onLoadMission = "RoamingDM [Genetic and SpudcakeZ]";
 onLoadIntro = "RoamingDM by Genetic and SpudcakeZ";
