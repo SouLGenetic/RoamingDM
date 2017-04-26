@@ -1,10 +1,11 @@
-
+//Configs
 #define FETCH_CONFIG(TYPE,CFG,SECTION,CLASS,ENTRY) TYPE(configFile >> CFG >> SECTION >> CLASS >> ENTRY)
 #define FETCH_CONFIG2(TYPE,CFG,CLASS,ENTRY) TYPE(configFile >> CFG >> CLASS >> ENTRY)
 #define FETCH_CONFIG3(TYPE,CFG,SECTION,CLASS,ENTRY,SUB) TYPE(configFile >> CFG >> SECTION >> CLASS >> ENTRY >> SUB)
 #define FETCH_CONFIG4(TYPE,CFG,SECTION,CLASS,ENTRY,SUB,SUB2) TYPE(configFile >> CFG >> SECTION >> CLASS >> ENTRY >> SUB >> SUB2)
 #define M_CONFIG(TYPE,CFG,CLASS,ENTRY) TYPE(missionConfigFile >> CFG >> CLASS >> ENTRY)
 #define BASE_CONFIG(CFG,CLASS) inheritsFrom(configFile >> CFG >> CLASS)
+//LootTable Macros
 #define LT_gunList M_CONFIG(getArray,"LootTables","gunList","gun_list")
 #define LT_rareguns M_CONFIG(getArray,"LootTables","rareguns","rare_guns")
 #define LT_easyguns M_CONFIG(getArray,"LootTables","easyguns","easy_guns")
@@ -15,3 +16,4 @@
 #define LT_rareatts M_CONFIG(getArray,"LootTables","rareatts","rare_atts")
 #define LT_easyatts M_CONFIG(getArray,"LootTables","easyatts","easy_atts")
 #define LT_bags M_CONFIG(getArray,"LootTables","bags","bag_s")
+#define LT_Uniforms M_CONFIG(getArray,"LootTables","Uniforms","uniforms")
