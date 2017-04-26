@@ -5,7 +5,7 @@
 	Desription = randomly creates crates of loot in and around buildings
 */
 
-private ["_gunList", "_magList","_i", "_c", "_rNum", "_houses"];
+private ["_i", "_c", "_rNum", "_houses"];
 
 
 
@@ -15,7 +15,7 @@ _lootrespawn = false;
 /*
 Array Setup
 */
-_gunList = LT_gunlist;
+_gunList = LT_gunList;
 _rareguns = LT_rareguns;
 _easyguns = LT_easyguns;
 _itemlist = LT_itemlist;
@@ -25,9 +25,9 @@ _attachment = LT_attachment;
 _rareatts = LT_rareatts;
 _easyatts = LT_easyatts;
 _bags = LT_bags;
+_uniform = LT_Uniforms;
 
-
-_items = ["CUP_TKBasicAmmunitionBox_EP1"];
+_items = ["Box_IND_Ammo_F"];
 
 _debug = true;
 
@@ -51,6 +51,8 @@ _i = 0;
  _rare = _rarity call bis_fnc_selectRandom;
  _itemrare = _rarity call bis_fnc_selectRandom;
  _attrare = _rarity call bis_fnc_selectRandom;
+ _uniformChance = floor(random 100);
+ _uniRare = _rarity call bis_fnc_selectRandom;
 
   _ranNum = floor(random _c);
   _selGuneasy = _easyguns call bis_fnc_selectRandom;
@@ -62,9 +64,10 @@ _i = 0;
   _magazineClass = _magazines call bis_fnc_selectRandom;
   _magazineClassnorm = _magazinesnorm call bis_fnc_selectRandom;
   _magazineClassrare = _magazinesrare call bis_fnc_selectRandom;
+  _ranUni = _uniform call bis_fnc_selectRandom;
   _ranItem = _easyitems call bis_fnc_selectRandom;
   _ranAtt = _easyatts call bis_fnc_selectRandom;
-  _normItem = _itemlists call bis_fnc_selectRandom;
+  _normItem = _itemlist call bis_fnc_selectRandom;
   _normAtt = _attachment call bis_fnc_selectRandom;
   _rareItem = _rareitems call bis_fnc_selectRandom;
   _rareAtt = _rareatts call bis_fnc_selectRandom;
@@ -78,6 +81,8 @@ _i = 0;
   clearMagazineCargoGlobal loot;
   _loot setPos (_x buildingPos _ranNum);
   _loot setPos (loot modelToWorld [0,0,1]);
+  _loot setObjectTextureGlobal [0,"Images\stickers.jpg"];
+  _loot setObjectTextureGlobal [1,"Images\crate.jpg"];
 
  if (_gunChance <= 70) then {
  if (_rare isEqualTo 1) then {
@@ -91,10 +96,10 @@ _i = 0;
   if (_rare isEqualTo 3) then {
  _loot addWeaponCargoGlobal [_selGunrare,1];
  _loot addMagazineCargoGlobal [_magazineClassrare,_maxMags];
- };
- };
- };
+      };
+    };
   };
+};
 
   if (_itemChance <= 50) then {
  if (_itemrare isEqualTo 1) then {
@@ -105,9 +110,9 @@ _i = 0;
   } else {
   if (_itemrare isEqualTo 3) then {
   _loot addItemCargoGlobal [_rareItem,1];
- };
- };
- };
+      };
+    };
+  };
 };
 
 
@@ -120,14 +125,18 @@ _i = 0;
   } else {
   if (_attrare isEqualTo 3) then {
   _loot addItemCargoGlobal [_rareAtt,1];
- };
- };
- };
+      };
+    };
+  };
 };
 
   if (_bagchance <= 20) then {
  _loot addBackpackCargoGlobal [_ranBag,1];
   };
+
+if (_uniformChance <= 95) then {
+  _loot addItemCargoGlobal [_ranUni,1];
+};
 
   if (_debug) then
   {
