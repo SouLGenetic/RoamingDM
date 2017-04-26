@@ -134,7 +134,7 @@ _i = 0;
  _loot addBackpackCargoGlobal [_ranBag,1];
   };
 
-if (_uniformChance <= 95) then {
+if (_uniformChance <= 5) then {
   _loot addItemCargoGlobal [_ranUni,1];
 };
 
