@@ -1,5 +1,5 @@
 author = "Genetic and SpudcakeZ";
-onLoadName = "RoamingDM";
+onLoadName = "RoamingDM [v1.0.0113]";
 gameType = DM;
 onLoadMission = "RoamingDM [Genetic and SpudcakeZ]";
 onLoadIntro = "RoamingDM by Genetic and SpudcakeZ";
@@ -15,6 +15,7 @@ disabledChannels[]={{0,true,true},{1,false,true},{6,true,true}};
 enableDebugConsole = 1;
 
 #include "Core\Dialogs\Master.hpp"
+#include "Core\clientFunctions\Config\MasterCfg.hpp"
 
 class CfgFunctions {
     #include "Functions.hpp"

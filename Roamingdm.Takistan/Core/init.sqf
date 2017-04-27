@@ -2,11 +2,15 @@ waitUntil {!(isNull (findDisplay 46))};
 diag_log "Display 46 Found";
 (findDisplay 46) displayaddEventHandler ["KeyDown", "_this call rDM_fnc_keyHandler"];
 
+//Spawn checks for boost such as speed via uniform
+[]spawn rDM_fnc_Checks;
+
 //Intro dialog
 createDialog "infoDialog";
 
 //repairing
-player addAction ["<t color='#ffe800'>Repair Vehicle</t>",{[]spawn rDM_fnc_vehicleRepair}];
+player addAction ["<t color='#ffe800'>Repair Vehicle</t>",rDM_fnc_vehicleRepair,"",0,false,false,"",'!isNull cursorObject && cursorTarget isKindOf "landvehicle"'];
+
 
 //hide packs
 waitUntil {uniform player isEqualTo "CUP_U_B_BAF_DDPM_Ghillie"};
