@@ -1,0 +1,1 @@
+player addAction ["<t color='#ffe800'>Repair Vehicle</t>",rDM_fnc_vehicleRepair,"",0,false,false,"",'!isNull cursorObject && cursorTarget isKindOf "landvehicle" && player distance cursorObject < 5'];
