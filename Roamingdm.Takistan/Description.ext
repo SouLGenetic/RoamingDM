@@ -1,22 +1,62 @@
 author = "Genetic and SpudcakeZ";
-onLoadName = "RoamingDM [v1.0.0113]";
+onLoadName = "RoamingDM [1.0.0104]";
 gameType = DM;
 onLoadMission = "RoamingDM [Genetic and SpudcakeZ]";
 onLoadIntro = "RoamingDM by Genetic and SpudcakeZ";
+
+class CfgServer {
+    DatabaseName = "RoamingDM2"; //Config name that'll be grep in the extdb-conf.ini. Default: [RoamingDM]
+    DebugMode = 1; //Enable many server/hc debugging logs. Default: 0 (1 = Enabled / 0 = Disabled)
+    HeadlessSupport = 0; //Enable/Disable Headless client support. Default: 1 (1 = Enabled / 0 = Disabled)
+};
+
+
 respawnButton = 1;
 respawn = "BASE";
 respawnDelay = 10;
 respawnDialog = 0;
-respawnOnStart = 0;
+respawnOnStart = -1;
+
+
 disabledAI = 1;
 aiKills = 0;
 loadScreen = "Images\Load.paa";
 disabledChannels[]={{0,true,true},{1,false,true},{6,true,true}};
 enableDebugConsole = 1;
+class Header
+{
+		/* minPlayers < maxPlayers */
+		gameType = DM; //@Const: Unknown || Coop || DM || Team || CTF || SCont || CTI || FF || Hold
+		minPlayers = 1; //@Int # of players the mission supports
+		maxPlayers = 35; //@Int # of players the mission supports
+};
 
 #include "Core\Dialogs\Master.hpp"
 #include "Core\clientFunctions\Config\MasterCfg.hpp"
 
 class CfgFunctions {
     #include "Functions.hpp"
+};
+
+class CfgSounds {
+	sounds[] = {};
+
+	class Panic
+	{
+
+		name = "Panic";
+		sound[] = {"\Sounds\Panic.ogg", 2, 1};
+		titles[] = {};
+	};
+};
+
+class CfgDebriefing {
+	 class Blacklisted {
+        title = "Blacklisted";
+        subtitle = "It would seem you have been BLACKLISTED.";
+        description = "If you believe this is a mistake contact an Admin.";
+        pictureBackground = "";
+        picture = "";
+        pictureColor[] = {0,0.3,0.6,1};
+	};
 };

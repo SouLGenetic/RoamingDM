@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="Roaming DM">
+    <Package name="Init">
+        <Key ID="STR_Init_ClientSetup">
+            <Original>Setting up client...</Original>
+</Key>
+<Key ID="STR_Init_ServerReady">
+            <Original>Waiting for the server...</Original>
+        </Key>
+        <Key ID="STR_Init_ExtdbFail">
+            <Original>DB failed to load, please contact an administrator.</Original>
+        </Key>
+        <Key ID="STR_Init_ClientFinish">
+            <Original>Finishing client setup procedure...</Original>
+        </Key>
+</Package>
+
+<Package name="Session_Strings">
+        <Key ID="STR_Session_Query">
+            <Original>Searching DataBase For UID [%1]</Original>
+            <Czech>Odesílání požadavku na server pro informační hráč UID [%1]</Czech>
+            <Spanish>Pidiendo informacion del UID de [%1] del server</Spanish>
+            <Russian></Russian>
+            <German>Frage Spieler Informationen zu UID [%1] ab...</German>
+            <French>Envoi de la requête au serveur pour obtenir des informations lecteur UID [%1]</French>
+            <Italian>Invio richiesta al server per le informazioni del giocatore UID [%1]</Italian>
+            <Portuguese>Obtendo informações do UID [%1] no servidor</Portuguese>
+            <Polish>Wysyłam żądanie do serwera po informację o fraczu UID [%1]</Polish>
+        </Key>
+        <Key ID="STR_Session_QueryFail">
+            <Original>The server didn't find any player information matching your UID, attempting to add player to system.</Original>
+            <Czech>Server nenašel žádné informace hráče nalezen.Chcete UID, pokusu o přidání hráče do systému.</Czech>
+            <Spanish>No se encontro ninguna información con tu UID, se esta creando un nuevo jugador.</Spanish>
+            <Russian></Russian>
+            <German>Der Server hat keine Spieler Informationen zu deiner UID gefunden, versuche Spieler ins System hinzuzufügen...</German>
+            <French>Le serveur n'a pas trouvé toutes les informations de lecteur correspondant à votre UID, tentative d'ajout du joueur dans le système.</French>
+            <Italian>Il server non ha trovato alcuna informazione sul giocatore con il tuo UID, tentativo di aggiunta del giocatore al sistema.</Italian>
+            <Portuguese>O servidor não encontrou nenhuma informação correspondente ao seu UID, tentando adicionar jogador ao sistema.</Portuguese>
+            <Polish>Serwer nie odnalazł informacji zgodnych z UID, dodaję gracza do bazy danych.</Polish>
+        </Key>
+        <Key ID="STR_Session_Error">
+            <Original>There was an error in trying to setup your client.</Original>
+            <Czech>Došlo k chybě při pokusu o nastavení vašeho klienta.</Czech>
+            <Spanish>Hubo un error en tratando de preparar tu cliente.</Spanish>
+            <Russian></Russian>
+            <German>Es gab einen Fehler beim Versuch, deinen Clienten einzurichten!</German>
+            <French>Il y avait une erreur en essayant de configurer votre client.</French>
+            <Italian>C'è stato qualche errore nel cercare di inizializzare il tuo client</Italian>
+            <Portuguese>Ocorreu um erro ao tentar configurar o seu cliente.</Portuguese>
+            <Polish>Wystąpił błąd w trakcie ustawiania klienta</Polish>
+        </Key>
+        <Key ID="STR_Session_Received">
+            <Original>Received request from server... Validating...</Original>
+            <Czech>Obdržení požadavku ze serveru ... Ověřování ...</Czech>
+            <Spanish>Pedido del server recibido... Validando...</Spanish>
+            <Russian></Russian>
+            <German>>Empfange Daten vom Server... Überprüfe...</German>
+            <French>Demande reçue du serveur... Validation...</French>
+            <Italian>Ricevuta richiesta dal server... Convalida...</Italian>
+            <Portuguese>Pedido recebido do servidor... Validando...</Portuguese>
+            <Polish>Otrzymano żądanie serwera ... sprawdzam</Polish>
+        </Key>
+        <Key ID="STR_Session_SyncdAlready">
+            <Original>You have already used the sync option, you can only use this feature once every 5 minutes.</Original>
+            <Czech>Již jste použili možnosti synchronizace, můžete použít pouze tuto funkci jednou za 5 minut.</Czech>
+            <Spanish>Ya has usado la función de sincronización, solo la puedes usar una vez cada 5 minutos.</Spanish>
+            <Russian></Russian>
+            <German>Du hast bereits deine Daten gespeichert, diese Funktion kann nur einmal alle 5 Minuten verwendet werden.</German>
+            <French>Vous avez déjà utilisé l'option de synchronisation, vous ne pouvez utiliser cette fonction une fois toutes les 5 minutes.</French>
+            <Italian>Hai già utilizzato la funzione di salva dati, puoi usare quest'opzione solo una volta ogni 5 minuti.</Italian>
+            <Portuguese>Você já usou a opção de sincronização, você só pode usar esse recurso uma vez a cada 5 minutos.</Portuguese>
+            <Polish>Użyłeś niedawno opcji synchronizacji, możesz jej używać maksymalnie co 5 minut.</Polish>
+        </Key>
+        <Key ID="STR_Session_SyncData">
+            <Original>Syncing player information to the server.\n\nPlease wait up to 20 seconds before leaving.</Original>
+            <Czech>Synchronizace informace o hráčích na serveru. \ O \ Prosím, vyčkejte až 20 sekund před odjezdem.</Czech>
+            <Spanish>Se esta sinconizando tu información con el server.\n\nPor favor espera 20 segundos antes de salir del server.</Spanish>
+            <Russian></Russian>
+            <German>Speichere deine Spieler-Informationen auf dem Server. \n\nBitte warte bis zu 20 Sekunden vor dem Verlassen.</German>
+            <French>Synchronisation des informations de joueur sur le serveur.\n\nS'il vous plaît veuiller attendre 20 secondes avant de quitter.</French>
+            <Italian>Salvando le informazioni giocatore sul server.\n\nAttendere fino a 20 secondi prima di abbandonare.</Italian>
+            <Portuguese>Sincronizando informação do jogador com o servidor.\n\n Por favor aguarde 20 segundos antes de sair.</Portuguese>
+            <Polish>Synchronizuję informację z serwere, .\n\nProszę poczekać ok 20 sekund przed opuszczeniem serwera</Polish>
+        </Key>
+</Package>
+<Package name="Notifs">
+     <Key ID="STR_NOTF_AbortESC">
+            <Original>Abort available in %1</Original>
+            <Czech>Přerušit k dispozici v %1</Czech>
+            <Spanish>Aborto disponible en %1</Spanish>
+            <Russian></Russian>
+            <French>Abandon disponible dans %1</French>
+            <German>Abbruch möglich in %1.</German>
+            <Italian>Abbandona disponibile in %1</Italian>
+            <Portuguese>Abortar disponível em %1</Portuguese>
+            <Polish>Możesz przerwać za %1</Polish>
+</Key>
+</Package>
