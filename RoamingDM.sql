@@ -24,6 +24,7 @@ CREATE TABLE IF NOT EXISTS `players` (
   `Player_gear` text NOT NULL,
   `adminlvl` enum('0','1','2','3','4','5') NOT NULL DEFAULT '0',
   `Blacklist` tinyint(1) NOT NULL DEFAULT '0',
+  `SANITY` int(100) NOT NULL DEFAULT '100',
   `insert_time` timestamp DEFAULT CURRENT_TIMESTAMP,
   `last_seen` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`uid`),
