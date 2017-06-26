@@ -23,12 +23,15 @@ diag_log "----------------------------------------------------------------------
 diag_log "::rDM Client:: Initialization Variables.";
 [] call compile preprocessFileLineNumbers "Core\initClient\fn_Vars.sqf";
 
+diag_log "::rDM Client:: Setup EventHandlers.";
+[] call rDM_fnc_Event;
+
+diag_log "::rDM Client:: Setup Actions.";
+[] call rDM_fnc_Action;
+
 diag_log "::rDM Client:: Received server functions.";
 0 cutText [localize "STR_Init_ServerReady","BLACK FADED"];
 0 cutFadeOut 99999999;
-
-[] call rDM_fnc_Action;
-
 
 diag_log "::rDM Client:: Waiting for the server to be ready..";
 waitUntil {!isNil "rDM_server_isReady"};
@@ -52,6 +55,7 @@ if (rDM_Blacklist) exitWith {
 
 
 [] spawn rDM_fnc_escSave;
+
 
 waitUntil {!(isNull (findDisplay 46))};
 diag_log "Display 46 Found";
@@ -88,3 +92,5 @@ while {true} do {
             waitUntil {backpack player != _bpack};
         };
     };
+    diag_log "::rDM Client:: Run Sanity Scripts.";
+[] call rDM_fnc_raiseSan;
