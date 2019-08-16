@@ -2,7 +2,9 @@
 Roaming DeathMatch {
 
 So you have an interest in my mission?
-well if you would like to ask me about it you can contact me at "latenightcrewlngc@gmail.com" or join the teamspeak3
-"lngc.strayaservers.com"
+
+you can contact me at "latenightcrewlngc@gmail.com" or Contact me via Discord:
+
+Genetic#7967
 
 };
